@@ -39,6 +39,7 @@ void Overlay::Init() {
 	IMGUI_CHECKVERSION();
 	ImGui::CreateContext();
 	ImGuiIO& io = ImGui::GetIO(); (void)io;
+	io.Fonts->AddFontFromFileTTF("Oswald-Medium.ttf", 24);
 	io.ConfigWindowsMoveFromTitleBarOnly = true;
 
 	ImGui::StyleColorsDark();
@@ -63,10 +64,11 @@ void Overlay::StartFrame() {
 	ImGui::NewFrame();
 }
 
-void Overlay::Update(Game game) {
+void Overlay::Update(Game& game) {
 	if (/*GAME IS OVER || */ !isWindowVisible) return;
 
-	DrawOverlay();
+	if (drawOverlay)
+		DrawOverlay(game);
 	if (drawUI)
 		DrawUI(game);
 	//frame time can be calculated here
@@ -75,6 +77,7 @@ void Overlay::Update(Game game) {
 void Overlay::RenderFrame() {
 	static ImVec4 clear_color = ImVec4(0.f, 0.f, 0.f, 0.f);
 
+	ImGui::EndFrame();
 	ImGui::Render();
 	dxDeviceContext->OMSetRenderTargets(1, &dxRenderTarget, NULL);
 	dxDeviceContext->ClearRenderTargetView(dxRenderTarget, (float*)&clear_color);
@@ -83,16 +86,20 @@ void Overlay::RenderFrame() {
 	//more benchmark calculations
 }
 
-void Overlay::DrawUI(Game game) {
+void Overlay::DrawUI(Game& game) {
 	ImGui::SetNextWindowPos(ImVec2(650, 20), ImGuiCond_FirstUseEver);
-	ImGui::SetNextWindowSize(ImVec2(550, 680), ImGuiCond_FirstUseEver);
+	ImGui::SetNextWindowSize(ImVec2(300, 680), ImGuiCond_FirstUseEver);
 	if (!ImGui::Begin("rayray's cdtracker")) {
 		ImGui::End();
 		return;
 	}
 	
 	if (ImGui::BeginTabBar("cdtrackerbar", ImGuiTabBarFlags_None)) {
-		if (ImGui::BeginTabItem("cds")) {
+		if (ImGui::BeginTabItem("cdtracker")) {
+			ImGui::Text("If your LoL cursor turns into your windows cursor, press F8.\nYou will not be able to click on this panel until you press F8 again.\n\nYou can press F7 to toggle the visibility of this panel.\n\nYou can press F6 to toggle the visibility of the overlay.");
+			ImGui::EndTabItem();
+		}
+		if (ImGui::BeginTabItem("cdinfo")) {
 			DrawCDs(game);
 			ImGui::EndTabItem();
 		}
@@ -101,7 +108,7 @@ void Overlay::DrawUI(Game game) {
 	ImGui::End();
 }
 
-void Overlay::DrawOverlay() {
+void Overlay::DrawOverlay(Game& game) {
 	auto io = ImGui::GetIO();
 	ImGui::SetNextWindowSize(io.DisplaySize);
 	ImGui::SetNextWindowPos(ImVec2(0, 0));
@@ -114,19 +121,64 @@ void Overlay::DrawOverlay() {
 		ImGuiWindowFlags_NoInputs |
 		ImGuiWindowFlags_NoBackground
 	);
-	//set the game overlay here?
-	ImGui::GetWindowDrawList();
+	game.overlay = ImGui::GetWindowDrawList();
+	DrawSpells(game);
 	ImGui::End();
 }
 
-void Overlay::DrawCDs(Game game) {
+void Overlay::DrawSpells(Game& game) {
+	for (int i = 0; i < 10; i++) {
+		if (!game.champs[i].isVisible || game.champs[i].health <= 0.5f) continue;
+		Vector2 pos = game.GetHpBarPos(game.champs[i]);
+		
+		Vector4 bigbox;
+		bigbox.x = pos.x - 80;
+		bigbox.y = pos.y - 9;
+		bigbox.z = pos.x + 73;
+		bigbox.w = pos.y + 8;
+		game.DrawRectFilled(bigbox, ImColor(40, 40, 40, 255), 2.f);
+		
+		for (int j = 0; j < 6; j++) {
+			std::string name = Character::ToLower(game.champs[i].spells[j].name);
+			float cd = game.champs[i].spells[j].getCoolDown(game.gameTime);
+			bool isReady = cd == 0;
+			
+			float leftX = pos.x - 75 + (24 * j);
+
+			auto activeColor = game.defaultActiveColor;
+			auto inactiveColor = game.defaultInactiveColor;
+			if (game.spellColors.count(name)) {
+				activeColor = game.spellColors[name].first;
+				inactiveColor = game.spellColors[name].second;
+			}
+
+			Vector4 box;
+			box.x = leftX;
+			box.y = pos.y - 5;
+			box.z = leftX + 23;
+			box.w = pos.y + 4;
+			game.DrawRectFilled(box, isReady ? activeColor : inactiveColor, 0.7f);
+
+			if (!isReady) {
+				Vector2 cdpos;
+				cdpos.x = leftX + 2;
+				cdpos.y = pos.y - 7;
+
+				game.DrawTxt(cdpos, Character::TwoCharCD(cd).c_str(), ImColor(255, 255, 255, 255));
+			}
+		}
+	}
+}
+
+void Overlay::DrawCDs(Game& game) {
 	for (Champion champ : game.champs) {
-		ImGui::Text(champ.name.c_str());
+		ImGui::Text("%s: x: %.1f y: %.1f, z: %.1f addr: %x", champ.name, champ.pos.x, champ.pos.y, champ.pos.z, champ.address);
+		ImGui::Text("HP bar position on screen: x: %.1f, y: %.1f", game.GetHpBarPos(champ).x, game.GetHpBarPos(champ).y);
 		for (Spell spell : champ.spells) {
 			float coolDown = spell.getCoolDown(game.gameTime);
-			ImGui::Text("Q: %.1f", coolDown); 
+			ImGui::Text("%s: %.1f", spell.name, coolDown); 
 		}
-	} 
+	}	
 }
 
 bool Overlay::IsVisible() {
@@ -147,6 +199,7 @@ void Overlay::ToggleTransparent() {
 	LONG ex_style = GetWindowLong(hWindow, GWL_EXSTYLE);
 	ex_style = (ex_style & WS_EX_TRANSPARENT) ? (ex_style & ~WS_EX_TRANSPARENT) : (ex_style | WS_EX_TRANSPARENT);
 	SetWindowLong(hWindow, GWL_EXSTYLE, ex_style);
+	isTransparent = (ex_style & WS_EX_TRANSPARENT);
 }
 
 ID3D11Device* Overlay::GetDxDevice() {
@@ -198,7 +251,7 @@ bool Overlay::CreateDeviceD3D(HWND hWnd)
 	IDCompositionDevice* dcompDevice;
 	DCompositionCreateDevice(
 		dxgiDevice,
-		__uuidof(dcompDevice),
+		__uuidof(dcompDevice), 
 		(void**)&dcompDevice);
 
 	IDCompositionTarget* target;

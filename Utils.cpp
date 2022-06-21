@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <cmath>
 #include <ctime>
+#include <iostream>
 
 DWORD Mem::ReadDWORD(HANDLE hProcess, DWORD addr) {
 	DWORD_PTR ptr = NULL;
@@ -57,4 +58,38 @@ std::string Character::RandomString(const int len) {
 
 
 	return tmp_s;
+}
+
+std::string Character::TwoCharCD(float cd) {
+	if (cd < 10) {
+		int num = (int)(cd) % 10;
+		int dec = (int)(cd * 10) % 10;
+		return std::to_string(num) + "." + std::to_string(dec);
+	}
+	else if (cd < 100) {
+		return std::to_string((int)cd);
+	}
+	else {
+		return std::to_string((int)std::round(cd / 60)) + "m";
+	}
+}
+
+std::map<std::string, float> Json::GetChampionData() {
+	std::ifstream fJson("UnitData.json");
+	std::stringstream buffer;
+	buffer << fJson.rdbuf();
+	auto json = nlohmann::json::parse(buffer.str());
+
+	std::map<std::string, float> out;
+
+	for (auto unit : json) {
+		bool isChamp = false;
+		for (auto tag : unit["tags"])
+			if (std::string(tag) == "Unit_Champion")
+				isChamp = true;
+		if (isChamp)
+			out.insert({ std::string(unit["name"]), (float)unit["healthBarHeight"] });
+	}
+
+	return out;
 }

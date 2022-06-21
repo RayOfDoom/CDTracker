@@ -5,8 +5,9 @@
 #include "MemoryReader.h"
 #include "Overlay.h"
 #include "Input.h"
+#include "GameRenderer.h"
 
-void mainLoop(Overlay& overlay, MemoryReader& reader) {
+void mainLoop(Overlay& overlay, MemoryReader& reader, std::map<std::string, float> ChampionData) {
 	Game game;
 	bool rehook = true;
 	printf("Waiting for league process\n");
@@ -16,6 +17,12 @@ void mainLoop(Overlay& overlay, MemoryReader& reader) {
 		if (overlay.IsVisible()) {
 			if (Input::WasKeyPressed(HKey::F8)) {
 				overlay.ToggleTransparent();
+			}
+			if (Input::WasKeyPressed(HKey::F7)) {
+				overlay.drawUI = !overlay.drawUI;
+			}
+			if (Input::WasKeyPressed(HKey::F6)) {
+				overlay.drawOverlay = !overlay.drawOverlay;
 			}
 			if (!isLeagueWindowActive) {
 				overlay.Hide();
@@ -32,6 +39,7 @@ void mainLoop(Overlay& overlay, MemoryReader& reader) {
 				reader.Hook();
 				rehook = false;
 				game = Game();
+				if(!overlay.isTransparent) overlay.ToggleTransparent();
 				printf("Successfully hooked\n");
 			}
 			else {
@@ -41,7 +49,8 @@ void mainLoop(Overlay& overlay, MemoryReader& reader) {
 				}
 
 				reader.UpdateGameTime(game);
-				reader.ReadChamps(game);
+				reader.ReadChamps(game, ChampionData);
+				reader.ReadRenderer(game);
 
 				if (game.gameTime > 2.f) {
 					overlay.Update(game);
@@ -56,7 +65,6 @@ void mainLoop(Overlay& overlay, MemoryReader& reader) {
 			break;
 		}
 		overlay.RenderFrame();
-		Sleep(50);
 	}
 }
 
@@ -65,8 +73,13 @@ int main() {
 	MemoryReader reader = MemoryReader();
 
 	try {
+		printf("Getting champion data\n");
+		std::map<std::string, float> ChampionData = Json::GetChampionData(); //gets health bar height
+
+		printf("Initializing UI\n");
 		overlay.Init();
-		mainLoop(overlay, reader);
+
+		mainLoop(overlay, reader, ChampionData);
 	}
 	catch (std::runtime_error exception) {
 		std::cout << exception.what() << std::endl;

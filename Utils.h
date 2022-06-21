@@ -2,6 +2,9 @@
 #include <stdexcept>
 #include "Windows.h"
 #include <iostream>
+#include <fstream>
+#include <sstream>
+#include "json.hpp"
 
 
 class WinApiException : public std::runtime_error {
@@ -30,4 +33,9 @@ namespace Character {
 	std::string ToLower(std::string str);
 	std::string RandomString(const int len);
 	std::string Format(const char* c, const char* args...);
-}
+	std::string TwoCharCD(float cd);
+};
+
+namespace Json {
+	std::map<std::string, float> GetChampionData();
+};

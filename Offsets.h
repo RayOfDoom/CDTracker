@@ -4,11 +4,17 @@ public:
 	Offsets();
 
 	static int GameTime;
+	static int Renderer;
+	static int RendererWidth;
+	static int RendererHeight;
+	static int ViewProjMatrices;
+
 	static int HeroList;
 	static int ObjName;
 	static int ObjSpellBook;
 	static int ObjVisibility;
 	static int ObjPos;
+	static int ObjHealth;
 	
 	static int SpellBookSpellSlot;
 	static int SpellSlotTime;
