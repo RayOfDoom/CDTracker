@@ -56,7 +56,7 @@ void MemoryReader::ReadRenderer(Game& game) {
 
 void MemoryReader::ReadSpells(Game& game, Champion& champ) {
 	for (int i = 0; i < 6; i++) {
-		DWORD spellBookSpellSlot = Mem::ReadDWORD(hProcess, champ.address + Offsets::ObjSpellBook + Offsets::SpellBookSpellSlot + (0x4 * i));
+		DWORD spellBookSpellSlot = Mem::ReadDWORD(hProcess, champ.address + Offsets::SpellBookSpellSlot + (0x4 * i));
 		DWORD spellSlotSpellInfo = Mem::ReadDWORD(hProcess, spellBookSpellSlot + Offsets::SpellSlotSpellInfo);
 		DWORD spellInfoSpellData = Mem::ReadDWORD(hProcess, spellSlotSpellInfo + Offsets::SpellInfoSpellData);
 		DWORD spellDataSpellName = Mem::ReadDWORD(hProcess, spellInfoSpellData + Offsets::SpellDataSpellName);
@@ -72,7 +72,7 @@ void MemoryReader::ReadChamps(Game& game, std::map<std::string, float>& Champion
 		for (int i = 0; i < 10; i++) {
 			game.champs[i].address = Mem::ReadDWORD(hProcess, list + (0x4 * i));
 			if (game.champs[i].address != 0) {
-				Mem::Read(hProcess, Mem::ReadDWORD(hProcess, game.champs[i].address + Offsets::ObjName), &game.champs[i].name, 50);
+				Mem::Read(hProcess, game.champs[i].address + Offsets::ObjName, &game.champs[i].name, 50);
 				Mem::Read(hProcess, game.champs[i].address + Offsets::ObjPos, &game.champs[i].pos, sizeof(float) * 3);
 				Mem::Read(hProcess, game.champs[i].address + Offsets::ObjVisibility, &game.champs[i].isVisible, sizeof(bool));
 				Mem::Read(hProcess, game.champs[i].address + Offsets::ObjHealth, &game.champs[i].health, sizeof(float));

@@ -2,20 +2,19 @@
 
 Offsets::Offsets() {};
 
-int Offsets::GameTime = 0x030f5224;
-int Offsets::Renderer = 0x0312c67c;
+int Offsets::GameTime = 0x030ff2f8;
+int Offsets::Renderer = 0x031381a4;
 int Offsets::RendererWidth = 0xc;
 int Offsets::RendererHeight = 0x10;
-int Offsets::ViewProjMatrices = 0x031297f0;
+int Offsets::ViewProjMatrices = 0x03135320;
 
-int Offsets::HeroList = 0x0185dd2c;
-int Offsets::ObjName = 0x2ac4;
-int Offsets::ObjSpellBook = 0x2250;
+int Offsets::HeroList = 0x01867d88;
+int Offsets::ObjName = 0x2d90; //good
 int Offsets::ObjVisibility = 0x274;
-int Offsets::ObjPos = 0x1dc;
-int Offsets::ObjHealth = 0xd9c;
+int Offsets::ObjPos = 0x1dc; //good
+int Offsets::ObjHealth = 0xe74; //good
 
-int Offsets::SpellBookSpellSlot = 0x488;
+int Offsets::SpellBookSpellSlot = 0x27b8;
 int Offsets::SpellSlotTime = 0x24;
 int Offsets::SpellSlotSpellInfo = 0x120;
 int Offsets::SpellInfoSpellData = 0x40;

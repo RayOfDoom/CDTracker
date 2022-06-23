@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CDTracker", "CDTracker.vcxproj", "{E2959DE1-1C5D-49F0-B868-AB1FE5915606}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CDTrackerSetup", "..\CDTrackerSetup\CDTrackerSetup.vdproj", "{C083CBA1-8B92-4A8A-B16A-9CC2AA52566F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,11 @@ Global
 		{E2959DE1-1C5D-49F0-B868-AB1FE5915606}.Release|x64.Build.0 = Release|x64
 		{E2959DE1-1C5D-49F0-B868-AB1FE5915606}.Release|x86.ActiveCfg = Release|Win32
 		{E2959DE1-1C5D-49F0-B868-AB1FE5915606}.Release|x86.Build.0 = Release|Win32
+		{C083CBA1-8B92-4A8A-B16A-9CC2AA52566F}.Debug|x64.ActiveCfg = Debug
+		{C083CBA1-8B92-4A8A-B16A-9CC2AA52566F}.Debug|x86.ActiveCfg = Debug
+		{C083CBA1-8B92-4A8A-B16A-9CC2AA52566F}.Release|x64.ActiveCfg = Release
+		{C083CBA1-8B92-4A8A-B16A-9CC2AA52566F}.Release|x64.Build.0 = Release
+		{C083CBA1-8B92-4A8A-B16A-9CC2AA52566F}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -121,6 +121,7 @@ void Overlay::DrawOverlay(Game& game) {
 		ImGuiWindowFlags_NoInputs |
 		ImGuiWindowFlags_NoBackground
 	);
+
 	game.overlay = ImGui::GetWindowDrawList();
 	DrawSpells(game);
 	ImGui::End();

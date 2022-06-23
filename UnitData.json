@@ -51,6 +51,23 @@
         ]
     },
     {
+        "name": "akshan",
+        "healthBarHeight": 112.0,
+        "baseMoveSpeed": 330.0,
+        "attackRange": 500.0,
+        "attackSpeed": 0.6380000114440918,
+        "attackSpeedRatio": 0.4000000059604645,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 100.0,
+        "pathingRadius": 35.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 1600.0,
+        "basicAtkWindup": 0.13333333532015482,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
         "name": "alistar",
         "healthBarHeight": 120.0,
         "baseMoveSpeed": 330.0,
@@ -224,63 +241,6 @@
         ]
     },
     {
-        "name": "assassinmode_mookcounticon",
-        "healthBarHeight": 100.0,
-        "baseMoveSpeed": 0.0,
-        "attackRange": 20.0,
-        "attackSpeed": 0.0,
-        "attackSpeedRatio": 0.0,
-        "acquisitionRange": 600.0,
-        "selectionRadius": 1.0,
-        "pathingRadius": 1.0,
-        "gameplayRadius": 1.0,
-        "basicAtkMissileSpeed": 0.0,
-        "basicAtkWindup": 0.31218749955296515,
-        "tags": [
-            "Unit_"
-        ]
-    },
-    {
-        "name": "assassinmode_objective_boss2",
-        "healthBarHeight": 100.0,
-        "baseMoveSpeed": 325.0,
-        "attackRange": 150.0,
-        "attackSpeed": 0.6669999957084656,
-        "attackSpeedRatio": 0.6669999957084656,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 120.0,
-        "pathingRadius": 30.0,
-        "gameplayRadius": 110.0,
-        "basicAtkMissileSpeed": 0.0,
-        "basicAtkWindup": 0.3779999812444051,
-        "tags": [
-            "Unit_Monster_Epic",
-            "Unit_Monster",
-            "Unit_Special_Void",
-            "Unit_Monster_Camp"
-        ]
-    },
-    {
-        "name": "assassinmode_roamingunit",
-        "healthBarHeight": 100.0,
-        "baseMoveSpeed": 250.0,
-        "attackRange": 0.0,
-        "attackSpeed": 0.6579999923706055,
-        "attackSpeedRatio": 0.6579999923706055,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 100.0,
-        "pathingRadius": 10.0,
-        "gameplayRadius": 65.0,
-        "basicAtkMissileSpeed": 0.0,
-        "basicAtkWindup": 0.37199999690055846,
-        "tags": [
-            "Unit_Special_TurretIgnores",
-            "Unit_Minion",
-            "Unit_Special_MonsterIgnores",
-            "Unit_Special_EpicMonsterIgnores"
-        ]
-    },
-    {
         "name": "aurelionsol",
         "healthBarHeight": 120.0,
         "baseMoveSpeed": 325.0,
@@ -363,7 +323,7 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.2082999974489212,
         "tags": [
-            "Unit_"
+            "Unit_Special_TeleportInvalid"
         ]
     },
     {
@@ -465,7 +425,14 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
         "tags": [
-            "Unit_"
+          "Unit_"
+        ]
+    },
+    {
+        "name": "belveth",
+        "healthBarHeight": 90.0,
+        "tags": [
+          "Unit_Champion"
         ]
     },
     {
@@ -500,8 +467,8 @@
         "basicAtkWindup": 0.0,
         "tags": [
             "Unit_Special_TurretIgnores",
-            "Unit_Special",
-            "Unit_Ward"
+            "Unit_Ward",
+            "Unit_Special"
         ]
     },
     {
@@ -625,8 +592,8 @@
         "basicAtkWindup": 0.13900000154972075,
         "tags": [
             "Unit_Structure",
-            "Unit_Structure_Turret_Nexus",
-            "Unit_Structure_Turret"
+            "Unit_Structure_Turret",
+            "Unit_Structure_Turret_Nexus"
         ]
     },
     {
@@ -716,8 +683,8 @@
         "basicAtkWindup": 0.13900000154972075,
         "tags": [
             "Unit_Structure",
-            "Unit_Structure_Turret_Nexus",
-            "Unit_Structure_Turret"
+            "Unit_Structure_Turret",
+            "Unit_Structure_Turret_Nexus"
         ]
     },
     {
@@ -1040,8 +1007,8 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
         "tags": [
-            "Unit_Special",
-            "Unit_Special_Trap"
+            "Unit_Special_Trap",
+            "Unit_Special"
         ]
     },
     {
@@ -1197,9 +1164,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.2082999974489212,
         "tags": [
-            "Unit_Special",
+            "Unit_Special_TeleportTarget",
             "Unit_Special_CorkiBomb",
-            "Unit_Special_TeleportTarget"
+            "Unit_Special"
         ]
     },
     {
@@ -1216,8 +1183,8 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.2082999974489212,
         "tags": [
-            "Unit_Special",
-            "Unit_Special_TeleportTarget"
+            "Unit_Special_TeleportTarget",
+            "Unit_Special"
         ]
     },
     {
@@ -1302,8 +1269,8 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
         "tags": [
-            "Unit_Special",
-            "Unit_Special_Trap"
+            "Unit_Special_Trap",
+            "Unit_Special"
         ]
     },
     {
@@ -1320,9 +1287,9 @@
         "basicAtkMissileSpeed": 700.0,
         "basicAtkWindup": 0.3,
         "tags": [
-            "Unit_Monster",
+            "Unit_Monster_Epic",
             "Unit_Champion",
-            "Unit_Monster_Epic"
+            "Unit_Monster"
         ]
     },
     {
@@ -1361,10 +1328,10 @@
     },
     {
         "name": "drmundo",
-        "healthBarHeight": 110.0,
+        "healthBarHeight": 120.0,
         "baseMoveSpeed": 345.0,
         "attackRange": 125.0,
-        "attackSpeed": 0.7210000157356262,
+        "attackSpeed": 0.7200000286102295,
         "attackSpeedRatio": 0.625,
         "acquisitionRange": 600.0,
         "selectionRadius": 135.0,
@@ -1510,14 +1477,14 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
         "tags": [
-            "Unit_Special_TeleportTarget",
-            "Unit_Special_TurretIgnores",
             "Unit_Champion",
-            "Unit_Special_LaneMinionIgnores",
+            "Unit_Special_EpicMonsterIgnores",
             "Unit_Special",
-            "Unit_Champion_Clone",
             "Unit_Special_MonsterIgnores",
-            "Unit_Special_EpicMonsterIgnores"
+            "Unit_Special_TurretIgnores",
+            "Unit_Champion_Clone",
+            "Unit_Special_TeleportTarget",
+            "Unit_Special_LaneMinionIgnores"
         ]
     },
     {
@@ -1636,8 +1603,8 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
         "tags": [
-            "Unit_IsolationNonImpacting",
-            "Unit_Special_UntargetableBySpells"
+            "Unit_Special_UntargetableBySpells",
+            "Unit_IsolationNonImpacting"
         ]
     },
     {
@@ -1721,6 +1688,23 @@
         "gameplayRadius": 65.0,
         "basicAtkMissileSpeed": 3000.0,
         "basicAtkWindup": 0.0050000131130218395,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "gwen",
+        "healthBarHeight": 110.0,
+        "baseMoveSpeed": 340.0,
+        "attackRange": 150.0,
+        "attackSpeed": 0.6899999976158142,
+        "attackSpeedRatio": 0.6899999976158142,
+        "acquisitionRange": 600.0,
+        "selectionRadius": 100.0,
+        "pathingRadius": 35.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 467.0,
+        "basicAtkWindup": 0.19672132236795462,
         "tags": [
             "Unit_Champion"
         ]
@@ -1863,8 +1847,8 @@
         "basicAtkWindup": 0.13900000154972075,
         "tags": [
             "Unit_Structure",
-            "Unit_Structure_Turret_Nexus",
-            "Unit_Structure_Turret"
+            "Unit_Structure_Turret",
+            "Unit_Structure_Turret_Nexus"
         ]
     },
     {
@@ -1899,25 +1883,8 @@
         "basicAtkWindup": 0.4000000014901161,
         "tags": [
             "Unit_Structure",
-            "Unit_Structure_Turret",
-            "Unit_Structure_Turret_Shrine"
-        ]
-    },
-    {
-        "name": "ha_ap_chaosturrettutorial",
-        "healthBarHeight": 600.0,
-        "baseMoveSpeed": 0.0,
-        "attackRange": 700.0,
-        "attackSpeed": 1.0,
-        "attackSpeedRatio": 0.0,
-        "acquisitionRange": 700.0,
-        "selectionRadius": 130.0,
-        "pathingRadius": 125.0,
-        "gameplayRadius": 88.4000015258789,
-        "basicAtkMissileSpeed": 1200.0,
-        "basicAtkWindup": 0.3,
-        "tags": [
-            "Unit_"
+            "Unit_Structure_Turret_Shrine",
+            "Unit_Structure_Turret"
         ]
     },
     {
@@ -2020,8 +1987,8 @@
         "basicAtkWindup": 0.4000000014901161,
         "tags": [
             "Unit_Structure",
-            "Unit_Structure_Turret",
-            "Unit_Structure_Turret_Shrine"
+            "Unit_Structure_Turret_Shrine",
+            "Unit_Structure_Turret"
         ]
     },
     {
@@ -2077,8 +2044,8 @@
         "basicAtkWindup": 0.13900000154972075,
         "tags": [
             "Unit_Structure",
-            "Unit_Structure_Turret_Nexus",
-            "Unit_Structure_Turret"
+            "Unit_Structure_Turret",
+            "Unit_Structure_Turret_Nexus"
         ]
     },
     {
@@ -2094,23 +2061,6 @@
         "gameplayRadius": 65.0,
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
-        "tags": [
-            "Unit_"
-        ]
-    },
-    {
-        "name": "ha_ap_orderturrettutorial",
-        "healthBarHeight": 625.0,
-        "baseMoveSpeed": 0.0,
-        "attackRange": 700.0,
-        "attackSpeed": 1.0,
-        "attackSpeedRatio": 0.0,
-        "acquisitionRange": 700.0,
-        "selectionRadius": 130.0,
-        "pathingRadius": 125.0,
-        "gameplayRadius": 88.4000015258789,
-        "basicAtkMissileSpeed": 1200.0,
-        "basicAtkWindup": 0.3,
         "tags": [
             "Unit_"
         ]
@@ -2248,9 +2198,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.4912500010244548,
         "tags": [
+            "Unit_Minion_Lane_Melee",
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Melee"
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -2267,9 +2217,9 @@
         "basicAtkMissileSpeed": 650.0,
         "basicAtkWindup": 0.31333333253860474,
         "tags": [
+            "Unit_Minion_Lane_Ranged",
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Ranged"
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -2287,8 +2237,8 @@
         "basicAtkWindup": 0.30000001192092896,
         "tags": [
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Siege"
+            "Unit_Minion_Lane_Siege",
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -2305,9 +2255,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.3472222084248513,
         "tags": [
+            "Unit_Minion_Lane_Super",
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Super"
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -2341,9 +2291,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.4912500010244548,
         "tags": [
+            "Unit_Minion_Lane_Melee",
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Melee"
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -2360,9 +2310,9 @@
         "basicAtkMissileSpeed": 650.0,
         "basicAtkWindup": 0.31333333253860474,
         "tags": [
+            "Unit_Minion_Lane_Ranged",
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Ranged"
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -2380,8 +2330,8 @@
         "basicAtkWindup": 0.30000001192092896,
         "tags": [
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Siege"
+            "Unit_Minion_Lane_Siege",
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -2398,9 +2348,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.3472222084248513,
         "tags": [
+            "Unit_Minion_Lane_Super",
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Super"
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -2474,12 +2424,48 @@
         ]
     },
     {
+        "name": "hexgate",
+        "healthBarHeight": 60.0,
+        "baseMoveSpeed": 0.0,
+        "attackRange": 0.0,
+        "attackSpeed": 0.0,
+        "attackSpeedRatio": 0.0,
+        "acquisitionRange": 50.0,
+        "selectionRadius": 80.0,
+        "pathingRadius": 70.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.2082999974489212,
+        "tags": [
+            "Unit_Special",
+            "Unit_IsolationNonImpacting"
+        ]
+    },
+    {
+        "name": "hexgate_exit",
+        "healthBarHeight": 60.0,
+        "baseMoveSpeed": 0.0,
+        "attackRange": 0.0,
+        "attackSpeed": 0.0,
+        "attackSpeedRatio": 0.0,
+        "acquisitionRange": 50.0,
+        "selectionRadius": 80.0,
+        "pathingRadius": 70.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.2082999974489212,
+        "tags": [
+            "Unit_Special",
+            "Unit_IsolationNonImpacting"
+        ]
+    },
+    {
         "name": "illaoi",
         "healthBarHeight": 112.0,
-        "baseMoveSpeed": 340.0,
+        "baseMoveSpeed": 350.0,
         "attackRange": 125.0,
-        "attackSpeed": 0.5709999799728394,
-        "attackSpeedRatio": 0.5709999799728394,
+        "attackSpeed": 0.625,
+        "attackSpeedRatio": 0.625,
         "acquisitionRange": 600.0,
         "selectionRadius": 100.0,
         "pathingRadius": 35.0,
@@ -2504,10 +2490,10 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.19999999850988387,
         "tags": [
-            "Unit_Special_TeleportTarget",
-            "Unit_Special_TurretIgnores",
-            "Unit_Special_KPMinion",
             "Unit_Special_UntargetableBySpells",
+            "Unit_Special_TurretIgnores",
+            "Unit_Special_TeleportTarget",
+            "Unit_Special_KPMinion",
             "Unit_IsolationNonImpacting"
         ]
     },
@@ -2576,8 +2562,8 @@
         "basicAtkMissileSpeed": 4000.0,
         "basicAtkWindup": 0.22999999970197677,
         "tags": [
-            "Unit_Champion",
-            "Unit_Special_MonsterIgnores"
+            "Unit_Special_MonsterIgnores",
+            "Unit_Champion"
         ]
     },
     {
@@ -2594,10 +2580,10 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.3680981752129367,
         "tags": [
+            "Unit_Special_MonsterIgnores",
             "Unit_Minion",
             "Unit_Minion_Summon_Large",
-            "Unit_Minion_Summon",
-            "Unit_Special_MonsterIgnores"
+            "Unit_Minion_Summon"
         ]
     },
     {
@@ -2614,8 +2600,8 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
         "tags": [
-            "Unit_Special_TurretIgnores",
-            "Unit_Special"
+            "Unit_Special",
+            "Unit_Special_TurretIgnores"
         ]
     },
     {
@@ -2633,18 +2619,18 @@
         "basicAtkWindup": 0.0,
         "tags": [
             "Unit_Special_TurretIgnores",
-            "Unit_Special",
-            "Unit_Ward"
+            "Unit_Ward",
+            "Unit_Special"
         ]
     },
     {
         "name": "janna",
         "healthBarHeight": 120.0,
-        "baseMoveSpeed": 315.0,
-        "attackRange": 550.0,
+        "baseMoveSpeed": 325.0,
+        "attackRange": 500.0,
         "attackSpeed": 0.625,
         "attackSpeedRatio": 0.625,
-        "acquisitionRange": 550.0,
+        "acquisitionRange": 500.0,
         "selectionRadius": 125.0,
         "pathingRadius": 35.0,
         "gameplayRadius": 65.0,
@@ -2685,8 +2671,8 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
         "tags": [
-            "Unit_Special",
-            "Unit_Special_TeleportTarget"
+            "Unit_Special_TeleportTarget",
+            "Unit_Special"
         ]
     },
     {
@@ -2771,11 +2757,11 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
         "tags": [
-            "Unit_Special_TeleportTarget",
-            "Unit_Special_TurretIgnores",
-            "Unit_Special",
             "Unit_Special_Trap",
+            "Unit_Special",
             "Unit_Special_UntargetableBySpells",
+            "Unit_Special_TurretIgnores",
+            "Unit_Special_TeleportTarget",
             "Unit_IsolationNonImpacting"
         ]
     },
@@ -2810,8 +2796,8 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
         "tags": [
-            "Unit_Special",
-            "Unit_Special_Trap"
+            "Unit_Special_Trap",
+            "Unit_Special"
         ]
     },
     {
@@ -2834,7 +2820,7 @@
     {
         "name": "kalista",
         "healthBarHeight": 100.0,
-        "baseMoveSpeed": 325.0,
+        "baseMoveSpeed": 330.0,
         "attackRange": 525.0,
         "attackSpeed": 0.6940000057220459,
         "attackSpeedRatio": 0.6940000057220459,
@@ -2879,8 +2865,11 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.37199999690055846,
         "tags": [
+            "Unit_Minion",
+            "Unit_Special_UntargetableBySpells",
             "Unit_Special_TurretIgnores",
-            "Unit_Special_UntargetableBySpells"
+            "Unit_Special_TeleportTarget",
+            "Unit_Minion_Summon"
         ]
     },
     {
@@ -2937,7 +2926,7 @@
     {
         "name": "katarina",
         "healthBarHeight": 90.0,
-        "baseMoveSpeed": 340.0,
+        "baseMoveSpeed": 335.0,
         "attackRange": 125.0,
         "attackSpeed": 0.6579999923706055,
         "attackSpeedRatio": 0.6579999923706055,
@@ -3086,8 +3075,8 @@
         "basicAtkWindup": 0.7065868130966041,
         "tags": [
             "Unit_Monster_Epic",
-            "Unit_Monster",
-            "Unit_KingPoro"
+            "Unit_KingPoro",
+            "Unit_Monster"
         ]
     },
     {
@@ -3295,8 +3284,8 @@
         "basicAtkWindup": 0.0,
         "tags": [
             "Unit_Special_TurretIgnores",
-            "Unit_Special",
-            "Unit_Ward"
+            "Unit_Ward",
+            "Unit_Special"
         ]
     },
     {
@@ -3347,7 +3336,7 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.20053500235080718,
         "tags": [
-            "Unit_"
+            "Unit_Minion"
         ]
     },
     {
@@ -3620,10 +3609,10 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.31218749955296515,
         "tags": [
+            "Unit_Special_Trap",
             "Unit_Minion",
-            "Unit_Special",
             "Unit_Minion_Summon",
-            "Unit_Special_Trap"
+            "Unit_Special"
         ]
     },
     {
@@ -3638,7 +3627,7 @@
         "pathingRadius": 35.0,
         "gameplayRadius": 65.0,
         "basicAtkMissileSpeed": 0.0,
-        "basicAtkWindup": 0.2437500014901161,
+        "basicAtkWindup": 0.2439999982714653,
         "tags": [
             "Unit_Champion"
         ]
@@ -3825,7 +3814,7 @@
         "acquisitionRange": 600.0,
         "selectionRadius": 90.0,
         "pathingRadius": 35.0,
-        "gameplayRadius": 80.0,
+        "gameplayRadius": 65.0,
         "basicAtkMissileSpeed": 2000.0,
         "basicAtkWindup": 0.2148387190553825,
         "tags": [
@@ -3880,11 +3869,11 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
         "tags": [
-            "Unit_Special_TeleportTarget",
-            "Unit_Special_TurretIgnores",
-            "Unit_Special",
             "Unit_Special_Trap",
+            "Unit_Special",
             "Unit_Special_UntargetableBySpells",
+            "Unit_Special_TurretIgnores",
+            "Unit_Special_TeleportTarget",
             "Unit_IsolationNonImpacting"
         ]
     },
@@ -3902,10 +3891,10 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.25,
         "tags": [
+            "Unit_Monster_Camp",
             "Unit_Monster_Epic",
             "Unit_Monster",
-            "Unit_Special_Void",
-            "Unit_Monster_Camp"
+            "Unit_Special_Void"
         ]
     },
     {
@@ -3979,7 +3968,7 @@
     {
         "name": "nunu",
         "healthBarHeight": 140.0,
-        "baseMoveSpeed": 340.0,
+        "baseMoveSpeed": 345.0,
         "attackRange": 125.0,
         "attackSpeed": 0.625,
         "attackSpeedRatio": 0.625,
@@ -4231,8 +4220,8 @@
         "basicAtkWindup": 0.0,
         "tags": [
             "Unit_Special_TurretIgnores",
-            "Unit_Special",
-            "Unit_Ward"
+            "Unit_Ward",
+            "Unit_Special"
         ]
     },
     {
@@ -4321,6 +4310,23 @@
         ]
     },
     {
+        "name": "petdowsie",
+        "healthBarHeight": 70.0,
+        "baseMoveSpeed": 350.0,
+        "attackRange": 0.0,
+        "attackSpeed": 0.0,
+        "attackSpeedRatio": 0.0,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 50.0,
+        "gameplayRadius": 80.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.37199999690055846,
+        "tags": [
+            "Unit_"
+        ]
+    },
+    {
         "name": "petdssquid",
         "healthBarHeight": 70.0,
         "baseMoveSpeed": 350.0,
@@ -4373,6 +4379,23 @@
     },
     {
         "name": "petfairy",
+        "healthBarHeight": 70.0,
+        "baseMoveSpeed": 350.0,
+        "attackRange": 0.0,
+        "attackSpeed": 0.0,
+        "attackSpeedRatio": 0.0,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 50.0,
+        "gameplayRadius": 80.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.37199999690055846,
+        "tags": [
+            "Unit_"
+        ]
+    },
+    {
+        "name": "petfenroar",
         "healthBarHeight": 70.0,
         "baseMoveSpeed": 350.0,
         "attackRange": 0.0,
@@ -4520,6 +4543,23 @@
         "gameplayRadius": 65.0,
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
+        "tags": [
+            "Unit_"
+        ]
+    },
+    {
+        "name": "petnimblefoot",
+        "healthBarHeight": 70.0,
+        "baseMoveSpeed": 350.0,
+        "attackRange": 0.0,
+        "attackSpeed": 0.0,
+        "attackSpeedRatio": 0.0,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 50.0,
+        "gameplayRadius": 80.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.37199999690055846,
         "tags": [
             "Unit_"
         ]
@@ -4802,7 +4842,7 @@
         "healthBarHeight": 100.0,
         "baseMoveSpeed": 335.0,
         "attackRange": 150.0,
-        "attackSpeed": 0.625,
+        "attackSpeed": 0.6880000233650208,
         "attackSpeedRatio": 0.625,
         "acquisitionRange": 0.0,
         "selectionRadius": 120.0,
@@ -4948,9 +4988,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.2082999974489212,
         "tags": [
-            "Unit_Special_Tunnel",
+            "Unit_Special_TeleportTarget",
             "Unit_IsolationNonImpacting",
-            "Unit_Special_TeleportTarget"
+            "Unit_Special_Tunnel"
         ]
     },
     {
@@ -4966,6 +5006,23 @@
         "gameplayRadius": 65.0,
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.20999999344348907,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "renata",
+        "healthBarHeight": 105.0,
+        "baseMoveSpeed": 330.0,
+        "attackRange": 550.0,
+        "attackSpeed": 0.625,
+        "attackSpeedRatio": 0.625,
+        "acquisitionRange": 550.0,
+        "selectionRadius": 100.0,
+        "pathingRadius": 35.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 1800.0,
+        "basicAtkWindup": 0.1879999965429306,
         "tags": [
             "Unit_Champion"
         ]
@@ -5069,8 +5126,8 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.38416999876499175,
         "tags": [
-            "Unit_Special_TurretIgnores",
-            "Unit_Special"
+            "Unit_Special",
+            "Unit_Special_TurretIgnores"
         ]
     },
     {
@@ -5138,8 +5195,8 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
         "tags": [
-            "Unit_IsolationNonImpacting",
-            "Unit_Special_UntargetableBySpells"
+            "Unit_Special_UntargetableBySpells",
+            "Unit_IsolationNonImpacting"
         ]
     },
     {
@@ -5150,7 +5207,7 @@
         "attackSpeed": 0.6690000295639038,
         "attackSpeedRatio": 0.625,
         "acquisitionRange": 525.0,
-        "selectionRadius": 0.0,
+        "selectionRadius": 120.0,
         "pathingRadius": 35.0,
         "gameplayRadius": 65.0,
         "basicAtkMissileSpeed": 0.0,
@@ -5179,7 +5236,7 @@
     {
         "name": "shaco",
         "healthBarHeight": 93.0,
-        "baseMoveSpeed": 350.0,
+        "baseMoveSpeed": 345.0,
         "attackRange": 125.0,
         "attackSpeed": 0.6940000057220459,
         "attackSpeedRatio": 0.6940000057220459,
@@ -5207,11 +5264,11 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.28802000004798173,
         "tags": [
-            "Unit_Special_TeleportTarget",
-            "Unit_Minion",
+            "Unit_Special_Trap",
             "Unit_Special",
-            "Unit_Minion_Summon",
-            "Unit_Special_Trap"
+            "Unit_Minion",
+            "Unit_Special_TeleportTarget",
+            "Unit_Minion_Summon"
         ]
     },
     {
@@ -5297,9 +5354,9 @@
         "basicAtkWindup": 0.0,
         "tags": [
             "Unit_Special_TurretIgnores",
-            "Unit_Special",
+            "Unit_Special_UntargetableBySpells",
             "Unit_Ward",
-            "Unit_Special_UntargetableBySpells"
+            "Unit_Special"
         ]
     },
     {
@@ -5507,59 +5564,6 @@
         ]
     },
     {
-        "name": "sruap_chaosinhibitor",
-        "healthBarHeight": 370.0,
-        "baseMoveSpeed": 0.0,
-        "attackRange": 0.0,
-        "attackSpeed": 0.0,
-        "attackSpeedRatio": 0.0,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 0.0,
-        "pathingRadius": 0.0,
-        "gameplayRadius": 65.0,
-        "basicAtkMissileSpeed": 0.0,
-        "basicAtkWindup": 0.0,
-        "tags": [
-            "Unit_Structure",
-            "Unit_Structure_Inhibitor"
-        ]
-    },
-    {
-        "name": "sruap_chaosinhibitor_rubble",
-        "healthBarHeight": 370.0,
-        "baseMoveSpeed": 0.0,
-        "attackRange": 0.0,
-        "attackSpeed": 0.0,
-        "attackSpeedRatio": 0.0,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 0.0,
-        "pathingRadius": 0.0,
-        "gameplayRadius": 65.0,
-        "basicAtkMissileSpeed": 0.0,
-        "basicAtkWindup": 0.0,
-        "tags": [
-            "Unit_"
-        ]
-    },
-    {
-        "name": "sruap_chaosnexus",
-        "healthBarHeight": 500.0,
-        "baseMoveSpeed": 0.0,
-        "attackRange": 0.0,
-        "attackSpeed": 0.0,
-        "attackSpeedRatio": 0.0,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 0.0,
-        "pathingRadius": 0.0,
-        "gameplayRadius": 65.0,
-        "basicAtkMissileSpeed": 0.0,
-        "basicAtkWindup": 0.0,
-        "tags": [
-            "Unit_Structure",
-            "Unit_Structure_Nexus"
-        ]
-    },
-    {
         "name": "sruap_chaosnexus_rubble",
         "healthBarHeight": 500.0,
         "baseMoveSpeed": 345.0,
@@ -5608,61 +5612,8 @@
         "basicAtkWindup": 0.4000000014901161,
         "tags": [
             "Unit_Structure",
-            "Unit_Structure_Turret",
-            "Unit_Structure_Turret_Shrine"
-        ]
-    },
-    {
-        "name": "sruap_orderinhibitor",
-        "healthBarHeight": 370.0,
-        "baseMoveSpeed": 0.0,
-        "attackRange": 0.0,
-        "attackSpeed": 0.0,
-        "attackSpeedRatio": 0.0,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 0.0,
-        "pathingRadius": 0.0,
-        "gameplayRadius": 65.0,
-        "basicAtkMissileSpeed": 0.0,
-        "basicAtkWindup": 0.0,
-        "tags": [
-            "Unit_Structure",
-            "Unit_Structure_Inhibitor"
-        ]
-    },
-    {
-        "name": "sruap_orderinhibitor_rubble",
-        "healthBarHeight": 370.0,
-        "baseMoveSpeed": 0.0,
-        "attackRange": 0.0,
-        "attackSpeed": 0.0,
-        "attackSpeedRatio": 0.0,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 0.0,
-        "pathingRadius": 0.0,
-        "gameplayRadius": 65.0,
-        "basicAtkMissileSpeed": 0.0,
-        "basicAtkWindup": 0.0,
-        "tags": [
-            "Unit_"
-        ]
-    },
-    {
-        "name": "sruap_ordernexus",
-        "healthBarHeight": 500.0,
-        "baseMoveSpeed": 0.0,
-        "attackRange": 0.0,
-        "attackSpeed": 0.0,
-        "attackSpeedRatio": 0.0,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 0.0,
-        "pathingRadius": 0.0,
-        "gameplayRadius": 65.0,
-        "basicAtkMissileSpeed": 0.0,
-        "basicAtkWindup": 0.0,
-        "tags": [
-            "Unit_Structure",
-            "Unit_Structure_Nexus"
+            "Unit_Structure_Turret_Shrine",
+            "Unit_Structure_Turret"
         ]
     },
     {
@@ -5702,25 +5653,6 @@
         ]
     },
     {
-        "name": "sruap_turret_chaos1_bot",
-        "healthBarHeight": 525.0,
-        "baseMoveSpeed": 0.0,
-        "attackRange": 750.0,
-        "attackSpeed": 0.8330000042915344,
-        "attackSpeedRatio": 0.8330000042915344,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 130.0,
-        "pathingRadius": 125.0,
-        "gameplayRadius": 88.4000015258789,
-        "basicAtkMissileSpeed": 0.0,
-        "basicAtkWindup": 0.13900000154972075,
-        "tags": [
-            "Unit_Structure",
-            "Unit_Structure_Turret_Outer",
-            "Unit_Structure_Turret"
-        ]
-    },
-    {
         "name": "sruap_turret_chaos1_rubble",
         "healthBarHeight": 525.0,
         "baseMoveSpeed": 345.0,
@@ -5751,32 +5683,13 @@
         "basicAtkMissileSpeed": 1200.0,
         "basicAtkWindup": 0.13900000154972075,
         "tags": [
-            "Unit_Structure_Turret_Inner",
             "Unit_Structure",
+            "Unit_Structure_Turret_Inner",
             "Unit_Structure_Turret"
         ]
     },
     {
         "name": "sruap_turret_chaos3",
-        "healthBarHeight": 525.0,
-        "baseMoveSpeed": 0.0,
-        "attackRange": 750.0,
-        "attackSpeed": 0.8330000042915344,
-        "attackSpeedRatio": 0.8330000042915344,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 130.0,
-        "pathingRadius": 125.0,
-        "gameplayRadius": 88.4000015258789,
-        "basicAtkMissileSpeed": 1200.0,
-        "basicAtkWindup": 0.13900000154972075,
-        "tags": [
-            "Unit_Structure",
-            "Unit_Structure_Turret_Inhib",
-            "Unit_Structure_Turret"
-        ]
-    },
-    {
-        "name": "sruap_turret_chaos3_test",
         "healthBarHeight": 525.0,
         "baseMoveSpeed": 0.0,
         "attackRange": 750.0,
@@ -5809,8 +5722,8 @@
         "basicAtkWindup": 0.13900000154972075,
         "tags": [
             "Unit_Structure",
-            "Unit_Structure_Turret_Nexus",
-            "Unit_Structure_Turret"
+            "Unit_Structure_Turret",
+            "Unit_Structure_Turret_Nexus"
         ]
     },
     {
@@ -5828,8 +5741,8 @@
         "basicAtkWindup": 0.4000000014901161,
         "tags": [
             "Unit_Structure",
-            "Unit_Structure_Turret",
-            "Unit_Structure_Turret_Shrine"
+            "Unit_Structure_Turret_Shrine",
+            "Unit_Structure_Turret"
         ]
     },
     {
@@ -5844,25 +5757,6 @@
         "pathingRadius": 125.0,
         "gameplayRadius": 88.4000015258789,
         "basicAtkMissileSpeed": 1200.0,
-        "basicAtkWindup": 0.13900000154972075,
-        "tags": [
-            "Unit_Structure",
-            "Unit_Structure_Turret_Outer",
-            "Unit_Structure_Turret"
-        ]
-    },
-    {
-        "name": "sruap_turret_order1_bot",
-        "healthBarHeight": 525.0,
-        "baseMoveSpeed": 0.0,
-        "attackRange": 750.0,
-        "attackSpeed": 0.8330000042915344,
-        "attackSpeedRatio": 0.8330000042915344,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 130.0,
-        "pathingRadius": 125.0,
-        "gameplayRadius": 88.4000015258789,
-        "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.13900000154972075,
         "tags": [
             "Unit_Structure",
@@ -5901,8 +5795,8 @@
         "basicAtkMissileSpeed": 1200.0,
         "basicAtkWindup": 0.13900000154972075,
         "tags": [
-            "Unit_Structure_Turret_Inner",
             "Unit_Structure",
+            "Unit_Structure_Turret_Inner",
             "Unit_Structure_Turret"
         ]
     },
@@ -5926,25 +5820,6 @@
         ]
     },
     {
-        "name": "sruap_turret_order3_test",
-        "healthBarHeight": 485.0,
-        "baseMoveSpeed": 0.0,
-        "attackRange": 750.0,
-        "attackSpeed": 0.8330000042915344,
-        "attackSpeedRatio": 0.8330000042915344,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 130.0,
-        "pathingRadius": 125.0,
-        "gameplayRadius": 88.4000015258789,
-        "basicAtkMissileSpeed": 0.0,
-        "basicAtkWindup": 0.13900000154972075,
-        "tags": [
-            "Unit_Structure",
-            "Unit_Structure_Turret_Inhib",
-            "Unit_Structure_Turret"
-        ]
-    },
-    {
         "name": "sruap_turret_order4",
         "healthBarHeight": 485.0,
         "baseMoveSpeed": 0.0,
@@ -5959,8 +5834,8 @@
         "basicAtkWindup": 0.13900000154972075,
         "tags": [
             "Unit_Structure",
-            "Unit_Structure_Turret_Nexus",
-            "Unit_Structure_Turret"
+            "Unit_Structure_Turret",
+            "Unit_Structure_Turret_Nexus"
         ]
     },
     {
@@ -5978,8 +5853,8 @@
         "basicAtkWindup": 0.4000000014901161,
         "tags": [
             "Unit_Structure",
-            "Unit_Structure_Turret",
-            "Unit_Structure_Turret_Shrine"
+            "Unit_Structure_Turret_Shrine",
+            "Unit_Structure_Turret"
         ]
     },
     {
@@ -6013,10 +5888,10 @@
         "basicAtkMissileSpeed": 1300.0,
         "basicAtkWindup": 0.17687499259598563,
         "tags": [
+            "Unit_Monster_Camp",
             "Unit_Monster_Epic",
             "Unit_Monster",
-            "Unit_Special_Void",
-            "Unit_Monster_Camp"
+            "Unit_Special_Void"
         ]
     },
     {
@@ -6067,11 +5942,11 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.27931033490529084,
         "tags": [
-            "Unit_Monster_Camp",
             "Unit_Monster_Buff",
+            "Unit_Monster_Camp",
+            "Unit_Monster",
             "Unit_Monster_Large",
-            "Unit_Monster_Blue",
-            "Unit_Monster"
+            "Unit_Monster_Blue"
         ]
     },
     {
@@ -6088,9 +5963,9 @@
         "basicAtkMissileSpeed": 750.0,
         "basicAtkWindup": 0.2912499898485841,
         "tags": [
+            "Unit_Monster_Camp",
             "Unit_Monster_Blue",
-            "Unit_Monster",
-            "Unit_Monster_Camp"
+            "Unit_Monster"
         ]
     },
     {
@@ -6107,9 +5982,9 @@
         "basicAtkMissileSpeed": 750.0,
         "basicAtkWindup": 0.2912499898485841,
         "tags": [
+            "Unit_Monster_Camp",
             "Unit_Monster_Blue",
-            "Unit_Monster",
-            "Unit_Monster_Camp"
+            "Unit_Monster"
         ]
     },
     {
@@ -6143,9 +6018,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.4912500010244548,
         "tags": [
+            "Unit_Minion_Lane_Melee",
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Melee"
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -6162,9 +6037,9 @@
         "basicAtkMissileSpeed": 650.0,
         "basicAtkWindup": 0.31333333253860474,
         "tags": [
+            "Unit_Minion_Lane_Ranged",
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Ranged"
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -6182,8 +6057,8 @@
         "basicAtkWindup": 0.30000001192092896,
         "tags": [
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Siege"
+            "Unit_Minion_Lane_Siege",
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -6200,9 +6075,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.3472222084248513,
         "tags": [
+            "Unit_Minion_Lane_Super",
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Super"
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -6220,10 +6095,10 @@
         "basicAtkWindup": 0.180000002682209,
         "tags": [
             "Unit_Monster_Camp",
-            "Unit_Special_Peaceful",
-            "Unit_Monster_Large",
+            "Unit_Monster_Crab",
             "Unit_Monster",
-            "Unit_Monster_Crab"
+            "Unit_Special_Peaceful",
+            "Unit_Monster_Large"
         ]
     },
     {
@@ -6257,10 +6132,10 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.4000000059604645,
         "tags": [
-            "Unit_Monster_Epic",
             "Unit_Monster_Dragon",
-            "Unit_Monster",
-            "Unit_Monster_Camp"
+            "Unit_Monster_Epic",
+            "Unit_Monster_Camp",
+            "Unit_Monster"
         ]
     },
     {
@@ -6268,7 +6143,7 @@
         "healthBarHeight": 102.5,
         "baseMoveSpeed": 330.0,
         "attackRange": 500.0,
-        "attackSpeed": 0.5,
+        "attackSpeed": 1.0,
         "attackSpeedRatio": 0.5,
         "acquisitionRange": 1000.0,
         "selectionRadius": 200.0,
@@ -6277,14 +6152,14 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.4000000059604645,
         "tags": [
-            "Unit_Monster_Epic",
             "Unit_Monster_Dragon",
-            "Unit_Monster",
-            "Unit_Monster_Camp"
+            "Unit_Monster_Epic",
+            "Unit_Monster_Camp",
+            "Unit_Monster"
         ]
     },
     {
-        "name": "sru_dragon_earth",
+        "name": "sru_dragon_chemtech",
         "healthBarHeight": 102.5,
         "baseMoveSpeed": 330.0,
         "attackRange": 500.0,
@@ -6297,10 +6172,30 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.4000000059604645,
         "tags": [
-            "Unit_Monster_Epic",
             "Unit_Monster_Dragon",
-            "Unit_Monster",
-            "Unit_Monster_Camp"
+            "Unit_Monster_Epic",
+            "Unit_Monster_Camp",
+            "Unit_Monster"
+        ]
+    },
+    {
+        "name": "sru_dragon_earth",
+        "healthBarHeight": 102.5,
+        "baseMoveSpeed": 330.0,
+        "attackRange": 500.0,
+        "attackSpeed": 0.25,
+        "attackSpeedRatio": 0.5,
+        "acquisitionRange": 1000.0,
+        "selectionRadius": 200.0,
+        "pathingRadius": 1.0,
+        "gameplayRadius": 125.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.4000000059604645,
+        "tags": [
+            "Unit_Monster_Dragon",
+            "Unit_Monster_Epic",
+            "Unit_Monster_Camp",
+            "Unit_Monster"
         ]
     },
     {
@@ -6317,10 +6212,10 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.4000000059604645,
         "tags": [
-            "Unit_Monster_Epic",
             "Unit_Monster_Dragon",
-            "Unit_Monster",
-            "Unit_Monster_Camp"
+            "Unit_Monster_Epic",
+            "Unit_Monster_Camp",
+            "Unit_Monster"
         ]
     },
     {
@@ -6337,10 +6232,30 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.4000000059604645,
         "tags": [
-            "Unit_Monster_Epic",
             "Unit_Monster_Dragon",
-            "Unit_Monster",
-            "Unit_Monster_Camp"
+            "Unit_Monster_Epic",
+            "Unit_Monster_Camp",
+            "Unit_Monster"
+        ]
+    },
+    {
+        "name": "sru_dragon_hextech",
+        "healthBarHeight": 102.5,
+        "baseMoveSpeed": 330.0,
+        "attackRange": 500.0,
+        "attackSpeed": 0.75,
+        "attackSpeedRatio": 0.75,
+        "acquisitionRange": 1000.0,
+        "selectionRadius": 200.0,
+        "pathingRadius": 1.0,
+        "gameplayRadius": 125.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.4000000059604645,
+        "tags": [
+            "Unit_Monster_Dragon",
+            "Unit_Monster_Epic",
+            "Unit_Monster_Camp",
+            "Unit_Monster"
         ]
     },
     {
@@ -6361,6 +6276,26 @@
         ]
     },
     {
+        "name": "sru_dragon_ruined",
+        "healthBarHeight": 102.5,
+        "baseMoveSpeed": 330.0,
+        "attackRange": 500.0,
+        "attackSpeed": 0.5,
+        "attackSpeedRatio": 0.5,
+        "acquisitionRange": 1000.0,
+        "selectionRadius": 200.0,
+        "pathingRadius": 1.0,
+        "gameplayRadius": 125.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.4000000059604645,
+        "tags": [
+            "Unit_Monster_Dragon",
+            "Unit_Monster_Epic",
+            "Unit_Monster_Camp",
+            "Unit_Monster"
+        ]
+    },
+    {
         "name": "sru_dragon_water",
         "healthBarHeight": 102.5,
         "baseMoveSpeed": 330.0,
@@ -6374,10 +6309,10 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.4000000059604645,
         "tags": [
-            "Unit_Monster_Epic",
             "Unit_Monster_Dragon",
-            "Unit_Monster",
-            "Unit_Monster_Camp"
+            "Unit_Monster_Epic",
+            "Unit_Monster_Camp",
+            "Unit_Monster"
         ]
     },
     {
@@ -6496,10 +6431,10 @@
         "basicAtkMissileSpeed": 1800.0,
         "basicAtkWindup": 0.180000002682209,
         "tags": [
-            "Unit_Monster_Large",
-            "Unit_Monster",
             "Unit_Monster_Gromp",
-            "Unit_Monster_Camp"
+            "Unit_Monster_Camp",
+            "Unit_Monster_Large",
+            "Unit_Monster"
         ]
     },
     {
@@ -6533,10 +6468,10 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.3680981752129367,
         "tags": [
+            "Unit_Monster_Camp",
             "Unit_Monster_Large",
             "Unit_Monster",
-            "Unit_Monster_Krug",
-            "Unit_Monster_Camp"
+            "Unit_Monster_Krug"
         ]
     },
     {
@@ -6553,10 +6488,10 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.40999999940395354,
         "tags": [
-            "Unit_Monster",
-            "Unit_Monster_Krug",
             "Unit_Monster_Camp",
-            "Unit_Monster_Medium"
+            "Unit_Monster_Medium",
+            "Unit_Monster_Krug",
+            "Unit_Monster"
         ]
     },
     {
@@ -6573,9 +6508,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.40999999940395354,
         "tags": [
-            "Unit_Monster",
+            "Unit_Monster_Camp",
             "Unit_Monster_Krug",
-            "Unit_Monster_Camp"
+            "Unit_Monster"
         ]
     },
     {
@@ -6609,10 +6544,10 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.3124999953433872,
         "tags": [
-            "Unit_Monster_Large",
             "Unit_Monster_Wolf",
-            "Unit_Monster",
-            "Unit_Monster_Camp"
+            "Unit_Monster_Camp",
+            "Unit_Monster_Large",
+            "Unit_Monster"
         ]
     },
     {
@@ -6630,8 +6565,8 @@
         "basicAtkWindup": 0.3124999953433872,
         "tags": [
             "Unit_Monster_Wolf",
-            "Unit_Monster",
-            "Unit_Monster_Camp"
+            "Unit_Monster_Camp",
+            "Unit_Monster"
         ]
     },
     {
@@ -6648,9 +6583,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.4912500010244548,
         "tags": [
+            "Unit_Minion_Lane_Melee",
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Melee"
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -6667,9 +6602,9 @@
         "basicAtkMissileSpeed": 650.0,
         "basicAtkWindup": 0.31333333253860474,
         "tags": [
+            "Unit_Minion_Lane_Ranged",
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Ranged"
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -6687,8 +6622,8 @@
         "basicAtkWindup": 0.30000001192092896,
         "tags": [
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Siege"
+            "Unit_Minion_Lane_Siege",
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -6705,9 +6640,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.3472222084248513,
         "tags": [
+            "Unit_Minion_Lane_Super",
             "Unit_Minion",
-            "Unit_Minion_Lane",
-            "Unit_Minion_Lane_Super"
+            "Unit_Minion_Lane"
         ]
     },
     {
@@ -6741,9 +6676,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.2082999974489212,
         "tags": [
+            "Unit_Special_UntargetableBySpells",
             "Unit_Plant",
-            "Unit_Ward",
-            "Unit_Special_UntargetableBySpells"
+            "Unit_Ward"
         ]
     },
     {
@@ -6760,9 +6695,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.2082999974489212,
         "tags": [
+            "Unit_Special_UntargetableBySpells",
             "Unit_Plant",
-            "Unit_Ward",
-            "Unit_Special_UntargetableBySpells"
+            "Unit_Ward"
         ]
     },
     {
@@ -6779,9 +6714,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.2082999974489212,
         "tags": [
+            "Unit_Special_UntargetableBySpells",
             "Unit_Plant",
-            "Unit_Ward",
-            "Unit_Special_UntargetableBySpells"
+            "Unit_Ward"
         ]
     },
     {
@@ -6832,10 +6767,10 @@
         "basicAtkMissileSpeed": 750.0,
         "basicAtkWindup": 0.20000000794728598,
         "tags": [
-            "Unit_Monster_Large",
-            "Unit_Monster",
+            "Unit_Monster_Camp",
             "Unit_Monster_Raptor",
-            "Unit_Monster_Camp"
+            "Unit_Monster_Large",
+            "Unit_Monster"
         ]
     },
     {
@@ -6852,9 +6787,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.4000000059604645,
         "tags": [
-            "Unit_Monster",
+            "Unit_Monster_Camp",
             "Unit_Monster_Raptor",
-            "Unit_Monster_Camp"
+            "Unit_Monster"
         ]
     },
     {
@@ -6871,11 +6806,11 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.2610837334282936,
         "tags": [
-            "Unit_Monster_Red",
-            "Unit_Monster_Camp",
             "Unit_Monster_Buff",
-            "Unit_Monster_Large",
-            "Unit_Monster"
+            "Unit_Monster_Camp",
+            "Unit_Monster",
+            "Unit_Monster_Red",
+            "Unit_Monster_Large"
         ]
     },
     {
@@ -6892,9 +6827,9 @@
         "basicAtkMissileSpeed": 750.0,
         "basicAtkWindup": 0.23952096780813728,
         "tags": [
+            "Unit_Monster_Camp",
             "Unit_Monster_Red",
-            "Unit_Monster",
-            "Unit_Monster_Camp"
+            "Unit_Monster"
         ]
     },
     {
@@ -6911,10 +6846,10 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.25,
         "tags": [
+            "Unit_Monster_Camp",
             "Unit_Monster_Epic",
             "Unit_Monster",
-            "Unit_Special_Void",
-            "Unit_Monster_Camp"
+            "Unit_Special_Void"
         ]
     },
     {
@@ -6932,9 +6867,9 @@
         "basicAtkWindup": 0.25,
         "tags": [
             "Unit_Monster_Epic",
+            "Unit_Monster_Large",
             "Unit_Monster",
-            "Unit_Special_Void",
-            "Unit_Monster_Large"
+            "Unit_Special_Void"
         ]
     },
     {
@@ -7127,7 +7062,7 @@
     {
         "name": "swain",
         "healthBarHeight": 105.0,
-        "baseMoveSpeed": 325.0,
+        "baseMoveSpeed": 330.0,
         "attackRange": 525.0,
         "attackSpeed": 0.625,
         "attackSpeedRatio": 0.625,
@@ -7223,8 +7158,9 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
         "tags": [
-            "Unit_Special_SyndraSphere",
-            "Unit_Special"
+            "Unit_Special_TeleportInvalid",
+            "Unit_Special",
+            "Unit_Special_SyndraSphere"
         ]
     },
     {
@@ -7247,7 +7183,7 @@
     {
         "name": "taliyah",
         "healthBarHeight": 100.0,
-        "baseMoveSpeed": 335.0,
+        "baseMoveSpeed": 330.0,
         "attackRange": 525.0,
         "attackSpeed": 0.625,
         "attackSpeedRatio": 0.625,
@@ -7343,11 +7279,11 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
         "tags": [
-            "Unit_Special_TeleportTarget",
-            "Unit_Special_TurretIgnores",
-            "Unit_Special",
             "Unit_Special_Trap",
+            "Unit_Special",
             "Unit_Special_UntargetableBySpells",
+            "Unit_Special_TurretIgnores",
+            "Unit_Special_TeleportTarget",
             "Unit_IsolationNonImpacting"
         ]
     },
@@ -7417,74 +7353,6 @@
         "basicAtkWindup": 0.3595000013709068,
         "tags": [
             "Unit_"
-        ]
-    },
-    {
-        "name": "tft4b_diana",
-        "healthBarHeight": 200.0,
-        "baseMoveSpeed": 500.0,
-        "attackRange": 180.0,
-        "attackSpeed": 0.699999988079071,
-        "attackSpeedRatio": 0.699999988079071,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 150.0,
-        "pathingRadius": 0.0,
-        "gameplayRadius": 65.0,
-        "basicAtkMissileSpeed": 347.79998779296875,
-        "basicAtkWindup": 0.0,
-        "tags": [
-            "Unit_Champion"
-        ]
-    },
-    {
-        "name": "tft4b_kindred",
-        "healthBarHeight": 200.0,
-        "baseMoveSpeed": 550.0,
-        "attackRange": 660.0,
-        "attackSpeed": 0.800000011920929,
-        "attackSpeedRatio": 0.800000011920929,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 120.0,
-        "pathingRadius": 0.0,
-        "gameplayRadius": 65.0,
-        "basicAtkMissileSpeed": 2000.0,
-        "basicAtkWindup": 0.3,
-        "tags": [
-            "Unit_Champion"
-        ]
-    },
-    {
-        "name": "tft4b_morgana",
-        "healthBarHeight": 210.0,
-        "baseMoveSpeed": 500.0,
-        "attackRange": 420.0,
-        "attackSpeed": 0.699999988079071,
-        "attackSpeedRatio": 0.699999988079071,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 120.0,
-        "pathingRadius": 0.0,
-        "gameplayRadius": 65.0,
-        "basicAtkMissileSpeed": 1600.0,
-        "basicAtkWindup": 0.0,
-        "tags": [
-            "Unit_Champion"
-        ]
-    },
-    {
-        "name": "tft4b_zed",
-        "healthBarHeight": 210.0,
-        "baseMoveSpeed": 500.0,
-        "attackRange": 180.0,
-        "attackSpeed": 0.800000011920929,
-        "attackSpeedRatio": 0.800000011920929,
-        "acquisitionRange": 0.0,
-        "selectionRadius": 120.0,
-        "pathingRadius": 0.0,
-        "gameplayRadius": 65.0,
-        "basicAtkMissileSpeed": 467.0,
-        "basicAtkWindup": 0.0,
-        "tags": [
-            "Unit_Champion"
         ]
     },
     {
@@ -7573,9 +7441,851 @@
         ]
     },
     {
+        "name": "tfttutorial_ahri",
+        "healthBarHeight": 65.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 660.0,
+        "attackSpeed": 0.550000011920929,
+        "attackSpeedRatio": 0.550000011920929,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 1750.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_akali",
+        "healthBarHeight": 80.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.800000011920929,
+        "attackSpeedRatio": 0.699999988079071,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.13900000154972075,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_ashe",
+        "healthBarHeight": 65.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 890.0,
+        "attackSpeed": 0.699999988079071,
+        "attackSpeedRatio": 0.699999988079071,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 2500.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_blitzcrank",
+        "healthBarHeight": 70.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.5,
+        "attackSpeedRatio": 0.5,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_braum",
+        "healthBarHeight": 75.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.6000000238418579,
+        "attackSpeedRatio": 0.6000000238418579,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 347.79998779296875,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_camille",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.6000000238418579,
+        "attackSpeedRatio": 0.6000000238418579,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 467.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_chaosminionmelee",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 450.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.800000011920929,
+        "attackSpeedRatio": 0.800000011920929,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion",
+            "Unit_Monster"
+        ]
+    },
+    {
+        "name": "tfttutorial_chaosminionranged",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 450.0,
+        "attackRange": 660.0,
+        "attackSpeed": 0.800000011920929,
+        "attackSpeedRatio": 0.800000011920929,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 650.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion",
+            "Unit_Monster"
+        ]
+    },
+    {
+        "name": "tfttutorial_darius",
+        "healthBarHeight": 80.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.5,
+        "attackSpeedRatio": 0.5,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_dragon",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 500.0,
+        "attackRange": 420.0,
+        "attackSpeed": 1.0,
+        "attackSpeedRatio": 0.0,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 700.0,
+        "basicAtkWindup": 0.4000000059604645,
+        "tags": [
+            "Unit_Champion",
+            "Unit_Monster"
+        ]
+    },
+    {
+        "name": "tfttutorial_elise",
+        "healthBarHeight": 75.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 420.0,
+        "attackSpeed": 0.6000000238418579,
+        "attackSpeedRatio": 0.6000000238418579,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 1600.0,
+        "basicAtkWindup": 0.18700000196695327,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_elisespider",
+        "healthBarHeight": 200.0,
+        "baseMoveSpeed": 500.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.800000011920929,
+        "attackSpeedRatio": 0.800000011920929,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 120.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.0,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_elisespiderling",
+        "healthBarHeight": 40.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.75,
+        "attackSpeedRatio": 0.75,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 2000.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Minion",
+            "Unit_Minion_Summon"
+        ]
+    },
+    {
+        "name": "tfttutorial_evelynn",
+        "healthBarHeight": 70.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.6000000238418579,
+        "attackSpeedRatio": 0.6000000238418579,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 467.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_fiora",
+        "healthBarHeight": 75.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 1.0,
+        "attackSpeedRatio": 0.0,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 467.0,
+        "basicAtkWindup": 0.41958045164316676,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_galio",
+        "healthBarHeight": 360.0,
+        "baseMoveSpeed": 500.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.5,
+        "attackSpeedRatio": 0.5,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 150.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_gangplank",
+        "healthBarHeight": 70.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.6499999761581421,
+        "attackSpeedRatio": 0.6000000238418579,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_gangplankbarrel",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.800000011920929,
+        "attackSpeedRatio": 0.800000011920929,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.0,
+        "tags": [
+            "Unit_"
+        ]
+    },
+    {
+        "name": "tfttutorial_garen",
+        "healthBarHeight": 80.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.6000000238418579,
+        "attackSpeedRatio": 0.6000000238418579,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 347.79998779296875,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_graves",
+        "healthBarHeight": 80.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.550000011920929,
+        "attackSpeedRatio": 0.550000011920929,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 3000.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_jayce",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.6499999761581421,
+        "attackSpeedRatio": 0.6499999761581421,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 347.79998779296875,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_jayceranged",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.6499999761581421,
+        "attackSpeedRatio": 0.6499999761581421,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_jinx",
+        "healthBarHeight": 75.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 660.0,
+        "attackSpeed": 0.699999988079071,
+        "attackSpeedRatio": 0.699999988079071,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 2750.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_kassadin",
+        "healthBarHeight": 80.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.550000011920929,
+        "attackSpeedRatio": 0.550000011920929,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.519480540089311,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_katarina",
+        "healthBarHeight": 75.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.6499999761581421,
+        "attackSpeedRatio": 0.6499999761581421,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 467.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_kayle",
+        "healthBarHeight": 85.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 660.0,
+        "attackSpeed": 1.0,
+        "attackSpeedRatio": 0.0,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 2250.0,
+        "basicAtkWindup": 0.5,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_khazix",
+        "healthBarHeight": 70.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.6000000238418579,
+        "attackSpeedRatio": 0.6000000238418579,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_krug",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.800000011920929,
+        "attackSpeedRatio": 0.800000011920929,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.3680981752129367,
+        "tags": [
+            "Unit_Champion",
+            "Unit_Monster"
+        ]
+    },
+    {
+        "name": "tfttutorial_leona",
+        "healthBarHeight": 80.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.550000011920929,
+        "attackSpeedRatio": 0.550000011920929,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 347.79998779296875,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_lissandra",
+        "healthBarHeight": 85.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 420.0,
+        "attackSpeed": 0.6000000238418579,
+        "attackSpeedRatio": 0.6000000238418579,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 120.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 2000.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_lucian",
+        "healthBarHeight": 80.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 660.0,
+        "attackSpeed": 0.6499999761581421,
+        "attackSpeedRatio": 0.6499999761581421,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 2800.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_lulu",
+        "healthBarHeight": 60.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 420.0,
+        "attackSpeed": 0.6000000238418579,
+        "attackSpeedRatio": 0.6000000238418579,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 1450.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_murkwolf",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 1.0,
+        "attackSpeedRatio": 0.0,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.3124999953433872,
+        "tags": [
+            "Unit_Champion",
+            "Unit_Monster"
+        ]
+    },
+    {
+        "name": "tfttutorial_murkwolfmini",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 1.0,
+        "attackSpeedRatio": 0.0,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.3124999953433872,
+        "tags": [
+            "Unit_Champion",
+            "Unit_Monster"
+        ]
+    },
+    {
+        "name": "tfttutorial_nidalee",
+        "healthBarHeight": 65.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 660.0,
+        "attackSpeed": 0.6499999761581421,
+        "attackSpeedRatio": 0.6499999761581421,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 120.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 2500.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_nidaleecougar",
+        "healthBarHeight": 60.0,
+        "baseMoveSpeed": 600.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.6499999761581421,
+        "attackSpeedRatio": 0.6499999761581421,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.0,
+        "tags": [
+            "Unit_"
+        ]
+    },
+    {
+        "name": "tfttutorial_pyke",
+        "healthBarHeight": 70.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.6000000238418579,
+        "attackSpeedRatio": 0.6000000238418579,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 120.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 347.79998779296875,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_razorbeak",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.800000011920929,
+        "attackSpeedRatio": 0.800000011920929,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.20000000794728598,
+        "tags": [
+            "Unit_Champion",
+            "Unit_Monster"
+        ]
+    },
+    {
+        "name": "tfttutorial_razorbeakmini",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.800000011920929,
+        "attackSpeedRatio": 0.800000011920929,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.4000000059604645,
+        "tags": [
+            "Unit_Champion",
+            "Unit_Monster"
+        ]
+    },
+    {
+        "name": "tfttutorial_reksai",
+        "healthBarHeight": 70.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.6000000238418579,
+        "attackSpeedRatio": 0.6000000238418579,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 120.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.40000001589457196,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_shen",
+        "healthBarHeight": 85.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.699999988079071,
+        "attackSpeedRatio": 0.6000000238418579,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_tristana",
+        "healthBarHeight": 45.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 890.0,
+        "attackSpeed": 0.6499999761581421,
+        "attackSpeedRatio": 0.6499999761581421,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 2250.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_twistedfate",
+        "healthBarHeight": 80.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 660.0,
+        "attackSpeed": 0.699999988079071,
+        "attackSpeedRatio": 0.699999988079071,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 1500.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_varus",
+        "healthBarHeight": 70.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 890.0,
+        "attackSpeed": 0.699999988079071,
+        "attackSpeedRatio": 0.699999988079071,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 2000.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_vayne",
+        "healthBarHeight": 70.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 660.0,
+        "attackSpeed": 0.699999988079071,
+        "attackSpeedRatio": 0.699999988079071,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 2000.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_veigar",
+        "healthBarHeight": 60.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 660.0,
+        "attackSpeed": 0.550000011920929,
+        "attackSpeedRatio": 0.550000011920929,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 1100.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_vi",
+        "healthBarHeight": 80.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.6499999761581421,
+        "attackSpeedRatio": 0.6499999761581421,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_warwick",
+        "healthBarHeight": 65.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.6000000238418579,
+        "attackSpeedRatio": 0.6000000238418579,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 347.79998779296875,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
+        "name": "tfttutorial_zed",
+        "healthBarHeight": 75.0,
+        "baseMoveSpeed": 550.0,
+        "attackRange": 180.0,
+        "attackSpeed": 0.699999988079071,
+        "attackSpeedRatio": 0.699999988079071,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 0.0,
+        "pathingRadius": 0.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 467.0,
+        "basicAtkWindup": 0.3,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
         "name": "thresh",
         "healthBarHeight": 105.0,
-        "baseMoveSpeed": 335.0,
+        "baseMoveSpeed": 330.0,
         "attackRange": 450.0,
         "attackSpeed": 0.625,
         "attackSpeedRatio": 0.625,
@@ -7603,8 +8313,8 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.2082999974489212,
         "tags": [
-            "Unit_Special",
-            "Unit_Special_TeleportTarget"
+            "Unit_Special_TeleportTarget",
+            "Unit_Special"
         ]
     },
     {
@@ -7619,7 +8329,7 @@
         "pathingRadius": 30.0,
         "gameplayRadius": 55.0,
         "basicAtkMissileSpeed": 2250.0,
-        "basicAtkWindup": 0.14800663590431212,
+        "basicAtkWindup": 0.14800000488758086,
         "tags": [
             "Unit_Champion"
         ]
@@ -7676,20 +8386,22 @@
         ]
     },
     {
-        "name": "tt_dummypusher",
-        "healthBarHeight": 100.0,
-        "baseMoveSpeed": 325.0,
-        "attackRange": 0.0,
-        "attackSpeed": 0.0,
-        "attackSpeedRatio": 0.0,
+        "name": "turret",
+        "healthBarHeight": 525.0,
+        "baseMoveSpeed": 0.0,
+        "attackRange": 750.0,
+        "attackSpeed": 0.8330000042915344,
+        "attackSpeedRatio": 0.8330000042915344,
         "acquisitionRange": 0.0,
-        "selectionRadius": 1.0,
-        "pathingRadius": 1.0,
-        "gameplayRadius": 65.0,
-        "basicAtkMissileSpeed": 0.0,
-        "basicAtkWindup": 0.3595000013709068,
+        "selectionRadius": 130.0,
+        "pathingRadius": 125.0,
+        "gameplayRadius": 88.4000015258789,
+        "basicAtkMissileSpeed": 1200.0,
+        "basicAtkWindup": 0.13900000154972075,
         "tags": [
-            "Unit_"
+            "Unit_Structure",
+            "Unit_Structure_Turret_Outer",
+            "Unit_Structure_Turret"
         ]
     },
     {
@@ -7965,6 +8677,23 @@
         ]
     },
     {
+        "name": "ultbook_jarvanivrwall",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 0.0,
+        "attackRange": 0.0,
+        "attackSpeed": 0.0,
+        "attackSpeedRatio": 0.0,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 1.0,
+        "pathingRadius": 95.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.3957999974489212,
+        "tags": [
+            "Unit_"
+        ]
+    },
+    {
         "name": "urf_feeneypult",
         "healthBarHeight": 100.0,
         "baseMoveSpeed": 0.0,
@@ -8070,6 +8799,23 @@
         ]
     },
     {
+        "name": "vex",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 335.0,
+        "attackRange": 550.0,
+        "attackSpeed": 0.6690000295639038,
+        "attackSpeedRatio": 0.625,
+        "acquisitionRange": 0.0,
+        "selectionRadius": 100.0,
+        "pathingRadius": 35.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 0.0,
+        "basicAtkWindup": 0.1562499976716936,
+        "tags": [
+            "Unit_Champion"
+        ]
+    },
+    {
         "name": "vi",
         "healthBarHeight": 110.0,
         "baseMoveSpeed": 340.0,
@@ -8090,7 +8836,7 @@
         "name": "viego",
         "healthBarHeight": 104.0,
         "baseMoveSpeed": 345.0,
-        "attackRange": 225.0,
+        "attackRange": 200.0,
         "attackSpeed": 0.6579999923706055,
         "attackSpeedRatio": 0.6579999923706055,
         "acquisitionRange": 775.0,
@@ -8117,8 +8863,8 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.0,
         "tags": [
-            "Unit_IsolationNonImpacting",
-            "Unit_Special_UntargetableBySpells"
+            "Unit_Special_UntargetableBySpells",
+            "Unit_IsolationNonImpacting"
         ]
     },
     {
@@ -8170,9 +8916,9 @@
         "basicAtkWindup": 0.0,
         "tags": [
             "Unit_Special_TurretIgnores",
-            "Unit_Special",
+            "Unit_Special_UntargetableBySpells",
             "Unit_Ward",
-            "Unit_Special_UntargetableBySpells"
+            "Unit_Special"
         ]
     },
     {
@@ -8207,8 +8953,8 @@
         "basicAtkWindup": 0.0,
         "tags": [
             "Unit_Structure",
-            "Unit_Special_Void",
-            "Unit_IsolationNonImpacting"
+            "Unit_IsolationNonImpacting",
+            "Unit_Special_Void"
         ]
     },
     {
@@ -8225,11 +8971,11 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.3,
         "tags": [
-            "Unit_Minion",
-            "Unit_Minion_Summon",
+            "Unit_Special_EpicMonsterIgnores",
             "Unit_Special_Void",
             "Unit_Special_MonsterIgnores",
-            "Unit_Special_EpicMonsterIgnores"
+            "Unit_Minion",
+            "Unit_Minion_Summon"
         ]
     },
     {
@@ -8286,7 +9032,7 @@
     {
         "name": "xayah",
         "healthBarHeight": 105.0,
-        "baseMoveSpeed": 325.0,
+        "baseMoveSpeed": 330.0,
         "attackRange": 525.0,
         "attackSpeed": 0.625,
         "attackSpeedRatio": 0.625,
@@ -8366,8 +9112,8 @@
         "basicAtkWindup": 0.0,
         "tags": [
             "Unit_Special_TurretIgnores",
-            "Unit_Special",
-            "Unit_Ward"
+            "Unit_Ward",
+            "Unit_Special"
         ]
     },
     {
@@ -8385,8 +9131,8 @@
         "basicAtkWindup": 0.0,
         "tags": [
             "Unit_Special_TurretIgnores",
-            "Unit_Special",
-            "Unit_Ward"
+            "Unit_Ward",
+            "Unit_Special"
         ]
     },
     {
@@ -8491,9 +9237,10 @@
         "basicAtkMissileSpeed": 0.0,
         "basicAtkWindup": 0.3595000013709068,
         "tags": [
-            "Unit_IsolationNonImpacting",
             "Unit_Special_YorickW",
-            "Unit_Special_UntargetableBySpells"
+            "Unit_Special_UntargetableBySpells",
+            "Unit_Special_TeleportInvalid",
+            "Unit_IsolationNonImpacting"
         ]
     },
     {
@@ -8580,6 +9327,23 @@
         "basicAtkWindup": 0.21929824650287627,
         "tags": [
             "Unit_"
+        ]
+    },
+    {
+        "name": "zeri",
+        "healthBarHeight": 100.0,
+        "baseMoveSpeed": 325.0,
+        "attackRange": 500.0,
+        "attackSpeed": 0.6579999923706055,
+        "attackSpeedRatio": 0.5680000185966492,
+        "acquisitionRange": 800.0,
+        "selectionRadius": 100.0,
+        "pathingRadius": 40.0,
+        "gameplayRadius": 65.0,
+        "basicAtkMissileSpeed": 8000.0,
+        "basicAtkWindup": 0.1562499976716936,
+        "tags": [
+            "Unit_Champion"
         ]
     },
     {

@@ -11,7 +11,6 @@ public:
 
 	static int HeroList;
 	static int ObjName;
-	static int ObjSpellBook;
 	static int ObjVisibility;
 	static int ObjPos;
 	static int ObjHealth;
