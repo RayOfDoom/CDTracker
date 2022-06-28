@@ -63,10 +63,11 @@ void MemoryReader::ReadSpells(Game& game, Champion& champ) {
 
 		Mem::Read(hProcess, spellBookSpellSlot + Offsets::SpellSlotTime, &champ.spells[i].readyAt, sizeof(float));
 		Mem::Read(hProcess, spellDataSpellName, &champ.spells[i].name, 50);
+		champ.spells[i].icon = game.SpellData[champ.spells[i].name];
 	}
 }
 
-void MemoryReader::ReadChamps(Game& game, std::map<std::string, float>& ChampionData) {
+void MemoryReader::ReadChamps(Game& game) {
 	DWORD list = Mem::ReadDWORD(hProcess, Mem::ReadDWORD(hProcess, moduleBaseAddr + Offsets::HeroList)  + 0x4);
 	if (list != 0) {
 		for (int i = 0; i < 10; i++) {
@@ -76,7 +77,7 @@ void MemoryReader::ReadChamps(Game& game, std::map<std::string, float>& Champion
 				Mem::Read(hProcess, game.champs[i].address + Offsets::ObjPos, &game.champs[i].pos, sizeof(float) * 3);
 				Mem::Read(hProcess, game.champs[i].address + Offsets::ObjVisibility, &game.champs[i].isVisible, sizeof(bool));
 				Mem::Read(hProcess, game.champs[i].address + Offsets::ObjHealth, &game.champs[i].health, sizeof(float));
-				game.champs[i].healthBarHeight = ChampionData[Character::ToLower(game.champs[i].name)];
+				game.champs[i].healthBarHeight = game.UnitData[Character::ToLower(game.champs[i].name)];
 
 				ReadSpells(game, game.champs[i]);
 			}

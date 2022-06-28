@@ -9,6 +9,7 @@ class Spell {
 public:
 	char name[50];
 	float readyAt;
+	ID3D11ShaderResourceView* icon;
 
 	float getCoolDown(float gameTime);
 };
@@ -29,6 +30,9 @@ class Game{
 public:
 	float gameTime = 0.f;
 	Champion champs[10];
+
+	std::map<std::string, ID3D11ShaderResourceView*> SpellData;
+	std::map<std::string, float> UnitData;
 
 	std::unique_ptr<GameRenderer> renderer = std::unique_ptr<GameRenderer>(new GameRenderer());
 	ImDrawList* overlay;

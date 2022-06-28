@@ -1,3 +1,4 @@
+#define STB_IMAGE_IMPLEMENTATION
 #include <iostream>
 #include "Windows.h"
 #include "Utils.h"
@@ -7,7 +8,33 @@
 #include "Input.h"
 #include "GameRenderer.h"
 
-void mainLoop(Overlay& overlay, MemoryReader& reader, std::map<std::string, float> ChampionData) {
+void mainLoop(Overlay& overlay, MemoryReader& reader, std::map<std::string, float> UnitData, std::map<std::string, ID3D11ShaderResourceView*> SpellData);
+
+
+int main() {
+	Overlay overlay = Overlay();
+	MemoryReader reader = MemoryReader();
+
+	try {
+		printf("Initializing UI\n");
+		overlay.Init();
+
+		printf("Getting Unit Data\n");
+		std::map<std::string, float> UnitData = Json::GetChampionData();
+
+		printf("Getting Spell Data\n");
+		std::map<std::string, ID3D11ShaderResourceView*> SpellData = Json::GetSpellData(overlay.GetDxDevice());
+
+		mainLoop(overlay, reader, UnitData, SpellData);
+	}
+	catch (std::runtime_error exception) {
+		std::cout << exception.what() << std::endl;
+	}
+	printf("Press any key to exit...");
+	_getch();
+}
+
+void mainLoop(Overlay& overlay, MemoryReader& reader, std::map<std::string, float> UnitData, std::map<std::string, ID3D11ShaderResourceView*> SpellData) {
 	Game game;
 	bool rehook = true;
 	printf("Waiting for league process\n");
@@ -39,7 +66,10 @@ void mainLoop(Overlay& overlay, MemoryReader& reader, std::map<std::string, floa
 				reader.Hook();
 				rehook = false;
 				game = Game();
-				if(!overlay.isTransparent) overlay.ToggleTransparent();
+				game.SpellData = SpellData;
+				game.UnitData = UnitData;
+
+				if (!overlay.isTransparent) overlay.ToggleTransparent();
 				printf("Successfully hooked\n");
 			}
 			else {
@@ -49,7 +79,7 @@ void mainLoop(Overlay& overlay, MemoryReader& reader, std::map<std::string, floa
 				}
 
 				reader.UpdateGameTime(game);
-				reader.ReadChamps(game, ChampionData);
+				reader.ReadChamps(game);
 				reader.ReadRenderer(game);
 
 				if (game.gameTime > 2.f) {
@@ -66,24 +96,4 @@ void mainLoop(Overlay& overlay, MemoryReader& reader, std::map<std::string, floa
 		}
 		overlay.RenderFrame();
 	}
-}
-
-int main() {
-	Overlay overlay = Overlay();
-	MemoryReader reader = MemoryReader();
-
-	try {
-		printf("Getting champion data\n");
-		std::map<std::string, float> ChampionData = Json::GetChampionData(); //gets health bar height
-
-		printf("Initializing UI\n");
-		overlay.Init();
-
-		mainLoop(overlay, reader, ChampionData);
-	}
-	catch (std::runtime_error exception) {
-		std::cout << exception.what() << std::endl;
-	}
-	printf("Press any key to exit...");
-	_getch();
 }

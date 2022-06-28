@@ -103,6 +103,10 @@ void Overlay::DrawUI(Game& game) {
 			DrawCDs(game);
 			ImGui::EndTabItem();
 		}
+		if (ImGui::BeginTabItem("images")) {
+			ImGui::Image(Texture2D::LoadFromFile(dxDevice, std::string("C:\\Users\\rayb2\\OneDrive\\3. Other\\CDTracker\\CDTracker\\icons_spells\\551.png"))->resourceView, ImVec2(100, 100));
+			ImGui::EndTabItem();
+		}
 		ImGui::EndTabBar();
 	}
 	ImGui::End();
@@ -134,9 +138,9 @@ void Overlay::DrawSpells(Game& game) {
 		
 		Vector4 bigbox;
 		bigbox.x = pos.x - 80;
-		bigbox.y = pos.y - 9;
+		bigbox.y = pos.y - 4;
 		bigbox.z = pos.x + 73;
-		bigbox.w = pos.y + 8;
+		bigbox.w = pos.y + 27;
 		game.DrawRectFilled(bigbox, ImColor(40, 40, 40, 255), 2.f);
 		
 		for (int j = 0; j < 6; j++) {
@@ -146,24 +150,20 @@ void Overlay::DrawSpells(Game& game) {
 			
 			float leftX = pos.x - 75 + (24 * j);
 
-			auto activeColor = game.defaultActiveColor;
-			auto inactiveColor = game.defaultInactiveColor;
-			if (game.spellColors.count(name)) {
-				activeColor = game.spellColors[name].first;
-				inactiveColor = game.spellColors[name].second;
-			}
-
 			Vector4 box;
 			box.x = leftX;
-			box.y = pos.y - 5;
+			box.y = pos.y ;
 			box.z = leftX + 23;
-			box.w = pos.y + 4;
-			game.DrawRectFilled(box, isReady ? activeColor : inactiveColor, 0.7f);
+			box.w = pos.y + 23;
+
+			game.overlay->AddImage((void*)game.SpellData[Character::ToLower(game.champs[i].spells[j].name)], ImVec2(box.x, box.y), ImVec2(box.z, box.w));
 
 			if (!isReady) {
+				game.DrawRectFilled(box, ImColor(0, 0, 0, 150));
+
 				Vector2 cdpos;
-				cdpos.x = leftX + 2;
-				cdpos.y = pos.y - 7;
+				cdpos.x = leftX + 4;
+				cdpos.y = pos.y + 0;
 
 				game.DrawTxt(cdpos, Character::TwoCharCD(cd).c_str(), ImColor(255, 255, 255, 255));
 			}
@@ -177,7 +177,8 @@ void Overlay::DrawCDs(Game& game) {
 		ImGui::Text("HP bar position on screen: x: %.1f, y: %.1f", game.GetHpBarPos(champ).x, game.GetHpBarPos(champ).y);
 		for (Spell spell : champ.spells) {
 			float coolDown = spell.getCoolDown(game.gameTime);
-			ImGui::Text("%s: %.1f", spell.name, coolDown); 
+			ImGui::Image(game.SpellData[Character::ToLower(spell.name)], ImVec2(30, 30));
+			ImGui::Text("%s: %.1f", spell.name, coolDown);
 		}
 	}	
 }

@@ -14,7 +14,7 @@ public:
 	void UpdateGameTime(Game& game);
 	void ReadRenderer(Game& game);
 	void ReadSpells(Game& game, Champion& champ);
-	void ReadChamps(Game& game, std::map<std::string, float>& ChampionData);
+	void ReadChamps(Game& game);
 
 private:
 	HANDLE hProcess = NULL;

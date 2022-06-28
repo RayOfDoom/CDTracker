@@ -33,6 +33,7 @@
     <ClCompile Include="Offsets.cpp" />
     <ClCompile Include="Overlay.cpp" />
     <ClCompile Include="GameRenderer.cpp" />
+    <ClCompile Include="Texture2D.cpp" />
     <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +52,8 @@
     <ClInclude Include="Objects.h" />
     <ClInclude Include="Offsets.h" />
     <ClInclude Include="Overlay.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="Texture2D.h" />
     <ClInclude Include="Utils.h" />
     <ClInclude Include="Vector.h" />
   </ItemGroup>

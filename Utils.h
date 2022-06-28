@@ -5,7 +5,7 @@
 #include <fstream>
 #include <sstream>
 #include "json.hpp"
-
+#include "Texture2D.h"
 
 class WinApiException : public std::runtime_error {
 
@@ -38,4 +38,5 @@ namespace Character {
 
 namespace Json {
 	std::map<std::string, float> GetChampionData();
+	std::map<std::string, ID3D11ShaderResourceView*> GetSpellData(ID3D11Device *device);
 };

@@ -3,6 +3,8 @@
 #include <cmath>
 #include <ctime>
 #include <iostream>
+#include "Overlay.h"
+#include <filesystem>
 
 DWORD Mem::ReadDWORD(HANDLE hProcess, DWORD addr) {
 	DWORD_PTR ptr = NULL;
@@ -91,5 +93,25 @@ std::map<std::string, float> Json::GetChampionData() {
 			out.insert({ std::string(unit["name"]), (float)unit["healthBarHeight"] });
 	}
 
+	return out;
+}
+
+std::map<std::string, ID3D11ShaderResourceView*> Json::GetSpellData(ID3D11Device *device) {
+	std::ifstream fJson("SpellData.json");
+	std::stringstream buffer;
+	buffer << fJson.rdbuf();
+	auto json = nlohmann::json::parse(buffer.str());
+
+	std::map<std::string, ID3D11ShaderResourceView*> out;
+
+	for (auto spell : json) {
+		if (std::string(spell["icon"]) != "") {
+			if (std::filesystem::exists((std::string("C:\\Users\\rayb2\\OneDrive\\3. Other\\CDTracker\\CDTracker\\icons_spells\\") + std::string(Character::ToLower(spell["icon"])) + std::string(".png")).c_str())) {
+				out.insert({ Character::ToLower(std::string(spell["name"])), Texture2D::LoadFromFile(device, (std::string("C:\\Users\\rayb2\\OneDrive\\3. Other\\CDTracker\\CDTracker\\icons_spells\\") + std::string(Character::ToLower(spell["icon"])) + std::string(".png")).c_str())->resourceView });			}
+			else {
+				out.insert({ Character::ToLower(std::string(spell["name"])), Texture2D::LoadFromFile(device, (std::string("C:\\Users\\rayb2\\OneDrive\\3. Other\\CDTracker\\CDTracker\\icons_spells\\summoner_empty.png").c_str()))->resourceView });
+			}
+		}
+	}
 	return out;
 }
