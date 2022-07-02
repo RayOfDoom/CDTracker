@@ -39,7 +39,7 @@ void Overlay::Init() {
 	IMGUI_CHECKVERSION();
 	ImGui::CreateContext();
 	ImGuiIO& io = ImGui::GetIO(); (void)io;
-	io.Fonts->AddFontFromFileTTF("Oswald-Medium.ttf", 24);
+	io.Fonts->AddFontFromFileTTF("NaturalMonoRegular-9YBeK.ttf", 20);
 	io.ConfigWindowsMoveFromTitleBarOnly = true;
 
 	ImGui::StyleColorsDark();
@@ -136,13 +136,6 @@ void Overlay::DrawSpells(Game& game) {
 		if (!game.champs[i].isVisible || game.champs[i].health <= 0.5f) continue;
 		Vector2 pos = game.GetHpBarPos(game.champs[i]);
 		
-		Vector4 bigbox;
-		bigbox.x = pos.x - 80;
-		bigbox.y = pos.y - 4;
-		bigbox.z = pos.x + 73;
-		bigbox.w = pos.y + 27;
-		game.DrawRectFilled(bigbox, ImColor(40, 40, 40, 255), 2.f);
-		
 		for (int j = 0; j < 6; j++) {
 			std::string name = Character::ToLower(game.champs[i].spells[j].name);
 			float cd = game.champs[i].spells[j].getCoolDown(game.gameTime);
@@ -153,8 +146,21 @@ void Overlay::DrawSpells(Game& game) {
 			Vector4 box;
 			box.x = leftX;
 			box.y = pos.y ;
-			box.z = leftX + 23;
-			box.w = pos.y + 23;
+			box.z = leftX + 21;
+			box.w = pos.y + 21;
+
+			Vector4 outline;
+			outline.x = box.x - 1;
+			outline.y = box.y - 1;
+			outline.z = box.z + 1;
+			outline.w = box.w + 1;
+
+			if (!isReady) {
+				game.DrawRectFilled(outline, ImColor(255, 0, 0, 255));
+			}
+			else {
+				game.DrawRectFilled(outline, ImColor(0, 255, 0, 255));
+			}
 
 			game.overlay->AddImage((void*)game.SpellData[Character::ToLower(game.champs[i].spells[j].name)], ImVec2(box.x, box.y), ImVec2(box.z, box.w));
 
@@ -162,8 +168,8 @@ void Overlay::DrawSpells(Game& game) {
 				game.DrawRectFilled(box, ImColor(0, 0, 0, 150));
 
 				Vector2 cdpos;
-				cdpos.x = leftX + 4;
-				cdpos.y = pos.y + 0;
+				cdpos.x = leftX;
+				cdpos.y = pos.y + 1;
 
 				game.DrawTxt(cdpos, Character::TwoCharCD(cd).c_str(), ImColor(255, 255, 255, 255));
 			}

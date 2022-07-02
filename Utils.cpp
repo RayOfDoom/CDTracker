@@ -63,10 +63,12 @@ std::string Character::RandomString(const int len) {
 }
 
 std::string Character::TwoCharCD(float cd) {
-	if (cd < 10) {
-		int num = (int)(cd) % 10;
+	if (cd < 1) {
 		int dec = (int)(cd * 10) % 10;
-		return std::to_string(num) + "." + std::to_string(dec);
+		return "." + std::to_string(dec);
+	}
+	else if (cd < 10) {
+		return "0" + std::to_string((int)cd);
 	}
 	else if (cd < 100) {
 		return std::to_string((int)cd);

@@ -19,7 +19,7 @@ bool MemoryReader::IsHooked() {
 }
 
 void MemoryReader::Hook() {
-	hWindow = FindWindowA("RiotWindowClass", NULL);
+	hWindow = FindWindowA(NULL, "League of Legends (TM) Client");
 	if (hWindow == NULL) {
 		throw WinApiException("Couldn't get league window");
 	}
