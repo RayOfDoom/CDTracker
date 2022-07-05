@@ -78,6 +78,8 @@ std::string Character::TwoCharCD(float cd) {
 	}
 }
 
+
+
 std::map<std::string, float> Json::GetChampionData() {
 	std::ifstream fJson("UnitData.json");
 	std::stringstream buffer;

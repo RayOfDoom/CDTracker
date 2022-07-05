@@ -39,23 +39,6 @@ public:
 
 	Vector2 GetHpBarPos(Champion& champ);
 
-	ImColor defaultActiveColor = ImColor(200, 200, 200, 255);
-	ImColor defaultInactiveColor = ImColor(200, 0, 0, 255);
-	std::map<std::string, std::pair<ImColor, ImColor>> spellColors = {
-		{"summonerflash", {ImColor(255, 255, 0, 255), ImColor(125, 125, 0, 255)}},
-		{"summonerhaste", {ImColor(0, 255, 255, 255), ImColor(0, 125, 125, 255)}},
-		{"summonerheal", {ImColor(0, 255, 0, 255), ImColor(0, 125, 0, 255)}},
-		{"summonerbarrier", {ImColor(190, 255, 0, 255), ImColor(95, 125, 0, 255)}},
-		{"summonerexhaust", {ImColor(255, 0, 255, 255), ImColor(125, 0, 125, 255)}},
-		{"summonerteleport", {ImColor(125, 0, 255, 255), ImColor(60, 0, 125, 255)}}, 
-		{"s12_summonerteleportupgrade", {ImColor(125, 0, 255, 255), ImColor(60, 0, 125, 255)}}, 
-		{"summonerboost", {ImColor(0, 125, 255, 255), ImColor(0, 60, 125, 255)}},
-		{"summonerdot", {ImColor(255, 128, 0, 255), ImColor(125, 60, 0, 255)}},
-		{"summonersmite", {ImColor(25, 25, 25, 255), ImColor(100, 100, 100, 255)}},
-		{"s5_summonersmiteplayerganker", {ImColor(25, 25, 25, 255), ImColor(100, 100, 100, 255)}},
-		{"s5_summonersmiteduel", {ImColor(25, 25, 25, 255), ImColor(100, 100, 100, 255)}},
-	};
-	
 	void DrawCircleFilled(const Vector2& center, float radius, int numPoints, const ImVec4& color) {
 		overlay->AddCircleFilled(ImVec2(center.x, center.y), radius, ImColor(color), numPoints);
 	}

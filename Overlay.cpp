@@ -103,10 +103,6 @@ void Overlay::DrawUI(Game& game) {
 			DrawCDs(game);
 			ImGui::EndTabItem();
 		}
-		if (ImGui::BeginTabItem("images")) {
-			ImGui::Image(Texture2D::LoadFromFile(dxDevice, std::string("C:\\Users\\rayb2\\OneDrive\\3. Other\\CDTracker\\CDTracker\\icons_spells\\551.png"))->resourceView, ImVec2(100, 100));
-			ImGui::EndTabItem();
-		}
 		ImGui::EndTabBar();
 	}
 	ImGui::End();
@@ -146,20 +142,20 @@ void Overlay::DrawSpells(Game& game) {
 			Vector4 box;
 			box.x = leftX;
 			box.y = pos.y ;
-			box.z = leftX + 21;
-			box.w = pos.y + 21;
+			box.z = leftX + 24;
+			box.w = pos.y + 24;
 
 			Vector4 outline;
-			outline.x = box.x - 1;
-			outline.y = box.y - 1;
-			outline.z = box.z + 1;
-			outline.w = box.w + 1;
+			outline.x = box.x;
+			outline.y = box.y - 2;
+			outline.z = box.z;
+			outline.w = box.w + 2;
 
 			if (!isReady) {
 				game.DrawRectFilled(outline, ImColor(255, 0, 0, 255));
 			}
 			else {
-				game.DrawRectFilled(outline, ImColor(0, 255, 0, 255));
+				game.DrawRectFilled(outline, ImColor(200, 200, 200, 255));
 			}
 
 			game.overlay->AddImage((void*)game.SpellData[Character::ToLower(game.champs[i].spells[j].name)], ImVec2(box.x, box.y), ImVec2(box.z, box.w));
@@ -168,7 +164,7 @@ void Overlay::DrawSpells(Game& game) {
 				game.DrawRectFilled(box, ImColor(0, 0, 0, 150));
 
 				Vector2 cdpos;
-				cdpos.x = leftX;
+				cdpos.x = leftX + 2;
 				cdpos.y = pos.y + 1;
 
 				game.DrawTxt(cdpos, Character::TwoCharCD(cd).c_str(), ImColor(255, 255, 255, 255));

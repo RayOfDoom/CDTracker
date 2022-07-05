@@ -14,6 +14,7 @@ public:
 	static int ObjVisibility;
 	static int ObjPos;
 	static int ObjHealth;
+	static int ObjHealthBar;
 	
 	static int SpellBookSpellSlot;
 	static int SpellSlotTime;
