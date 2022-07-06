@@ -128,6 +128,8 @@ void Overlay::DrawOverlay(Game& game) {
 }
 
 void Overlay::DrawSpells(Game& game) {
+	game.renderer->DrawCircleAt(game.overlay, game.champs[0].pos, game.champs[0].atkRange, false, 50, ImColor(200, 200, 200, 255));
+
 	for (int i = 0; i < 10; i++) {
 		if (!game.champs[i].isVisible || game.champs[i].health <= 0.5f) continue;
 		Vector2 pos = game.GetHpBarPos(game.champs[i]);

@@ -110,10 +110,10 @@ std::map<std::string, ID3D11ShaderResourceView*> Json::GetSpellData(ID3D11Device
 
 	for (auto spell : json) {
 		if (std::string(spell["icon"]) != "") {
-			if (std::filesystem::exists((std::string("C:\\Users\\rayb2\\OneDrive\\3. Other\\CDTracker\\CDTracker\\icons_spells\\") + std::string(Character::ToLower(spell["icon"])) + std::string(".png")).c_str())) {
-				out.insert({ Character::ToLower(std::string(spell["name"])), Texture2D::LoadFromFile(device, (std::string("C:\\Users\\rayb2\\OneDrive\\3. Other\\CDTracker\\CDTracker\\icons_spells\\") + std::string(Character::ToLower(spell["icon"])) + std::string(".png")).c_str())->resourceView });			}
+			if (std::filesystem::exists((std::string("C:\\Users\\jacob\\source\\repos\\RayOfDoom\\CDTracker\\icons_spells\\") + std::string(Character::ToLower(spell["icon"])) + std::string(".png")).c_str())) {
+				out.insert({ Character::ToLower(std::string(spell["name"])), Texture2D::LoadFromFile(device, (std::string("C:\\Users\\jacob\\source\\repos\\RayOfDoom\\CDTracker\\icons_spells\\") + std::string(Character::ToLower(spell["icon"])) + std::string(".png")).c_str())->resourceView });			}
 			else {
-				out.insert({ Character::ToLower(std::string(spell["name"])), Texture2D::LoadFromFile(device, (std::string("C:\\Users\\rayb2\\OneDrive\\3. Other\\CDTracker\\CDTracker\\icons_spells\\summoner_empty.png").c_str()))->resourceView });
+				out.insert({ Character::ToLower(std::string(spell["name"])), Texture2D::LoadFromFile(device, (std::string("C:\\Users\\jacob\\source\\repos\\RayOfDoom\\CDTracker\\icons_spells\\summoner_empty.png").c_str()))->resourceView });
 			}
 		}
 	}

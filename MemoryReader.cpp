@@ -77,6 +77,7 @@ void MemoryReader::ReadChamps(Game& game) {
 				Mem::Read(hProcess, game.champs[i].address + Offsets::ObjPos, &game.champs[i].pos, sizeof(float) * 3);
 				Mem::Read(hProcess, game.champs[i].address + Offsets::ObjVisibility, &game.champs[i].isVisible, sizeof(bool));
 				Mem::Read(hProcess, game.champs[i].address + Offsets::ObjHealth, &game.champs[i].health, sizeof(float));
+				Mem::Read(hProcess, game.champs[i].address + Offsets::ObjAtkRange, &game.champs[i].atkRange, sizeof(float));
 				game.champs[i].healthBarHeight = game.UnitData[Character::ToLower(game.champs[i].name)];
 
 				ReadSpells(game, game.champs[i]);

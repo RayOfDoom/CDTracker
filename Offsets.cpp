@@ -13,6 +13,8 @@ int Offsets::ObjName = 0x2d90; //good
 int Offsets::ObjVisibility = 0x274;
 int Offsets::ObjPos = 0x1dc; //good
 int Offsets::ObjHealth = 0xe74; //good
+int Offsets::ObjBoundingRadius;
+int Offsets::ObjAtkRange = 0x1394;
 
 int Offsets::SpellBookSpellSlot = 0x27b8;
 int Offsets::SpellSlotTime = 0x24;

@@ -22,6 +22,7 @@ public:
 	float healthBarHeight = 0.f;
 	Vector3 pos;
 	bool isVisible;
+	float atkRange = 0.f;
 
 	Spell spells[6];
 };
